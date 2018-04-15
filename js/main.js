@@ -1,168 +1,116 @@
-(function($) {
-  
-  "use strict";
+jQuery(document).ready(function( $ ) {
 
-  // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
+  // Header fixed and Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+      $('#header').addClass('header-fixed');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+      $('#header').removeClass('header-fixed');
+    }
+  });
+  $('.back-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // Initiate the wowjs
+  new WOW().init();
+
+  // Initiate superfish on nav menu
+  $('.nav-menu').superfish({
+    animation: {opacity:'show'},
+    speed: 400
+  });
+
+  // Mobile Navigation
+  if( $('#nav-menu-container').length ) {
+    var $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav'});
+    $mobile_nav.find('> ul').attr({ 'class' : '', 'id' : '' });
+    $('body').append( $mobile_nav );
+    $('body').prepend( '<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>' );
+    $('body').append( '<div id="mobile-body-overly"></div>' );
+    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+
+    $(document).on('click', '.menu-has-children i', function(e){
+      $(this).next().toggleClass('menu-item-active');
+      $(this).nextAll('ul').eq(0).slideToggle();
+      $(this).toggleClass("fa-chevron-up fa-chevron-down");
+    });
+
+    $(document).on('click', '#mobile-nav-toggle', function(e){
+      $('body').toggleClass('mobile-nav-active');
+      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+      $('#mobile-body-overly').toggle();
+    });
+
+    $(document).click(function (e) {
+      var container = $("#mobile-nav, #mobile-nav-toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+       if ( $('body').hasClass('mobile-nav-active') ) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('#mobile-body-overly').fadeOut();
         }
-    });
-
-    /* 
-   One Page Navigation & wow js
-   ========================================================================== */
-    //Initiat WOW JS
-    new WOW().init();
-
-    // one page navigation 
-    $('.main-navigation').onePageNav({
-            currentClass: 'active'
-    }); 
-
-    $(window).on('load', function() {
-       
-        $('body').scrollspy({
-            target: '.navbar-collapse',
-            offset: 195
-        });
-
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 200) {
-                $('.fixed-top').addClass('menu-bg');
-            } else {
-                $('.fixed-top').removeClass('menu-bg');
-            }
-        });
-
-    });
-
-    // Slick Nav 
-    $('.mobile-menu').slicknav({
-      prependTo: '.navbar-header',
-      parentTag: 'span',
-      allowParentLinks: true,
-      duplicate: false,
-      label: '',
-    });
-
-
-/* 
-   CounterUp
-   ========================================================================== */
-    $('.counter').counterUp({
-      time: 1000
-    });
-
-/* 
-   MixitUp
-   ========================================================================== */
-  $('#portfolio').mixItUp();
-
-/* 
-   Touch Owl Carousel
-   ========================================================================== */
-    var owl = $(".touch-slider");
-    owl.owlCarousel({
-      navigation: false,
-      pagination: true,
-      slideSpeed: 1000,
-      stopOnHover: true,
-      autoPlay: true,
-      items: 2,
-      itemsDesktop : [1199,2],
-      itemsDesktopSmall: [1024, 2],
-      itemsTablet: [600, 1],
-      itemsMobile: [479, 1]
-    });
-
-    $('.touch-slider').find('.owl-prev').html('<i class="fa fa-chevron-left"></i>');
-    $('.touch-slider').find('.owl-next').html('<i class="fa fa-chevron-right"></i>');
-
-/* 
-   Sticky Nav
-   ========================================================================== */
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.header-top-area').addClass('menu-bg');
-        } else {
-            $('.header-top-area').removeClass('menu-bg');
-        }
-    });
-
-/* 
-   VIDEO POP-UP
-   ========================================================================== */
-    $('.video-popup').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false,
-    });
-
-
-  /* 
-   SMOOTH SCROLL
-   ========================================================================== */
-    var scrollAnimationTime = 1200,
-        scrollAnimation = 'easeInOutExpo';
-
-    $('a.scrollto').on('bind', 'click.smoothscroll', function (event) {
-        event.preventDefault();
-        var target = this.hash;
-        
-        $('html, body').stop().animate({
-            'scrollTop': $(target).offset().top
-        }, scrollAnimationTime, scrollAnimation, function () {
-            window.location.hash = target;
-        });
-    });
-
-/* 
-   Back Top Link
-   ========================================================================== */
-    var offset = 200;
-    var duration = 500;
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > offset) {
-        $('.back-to-top').fadeIn(400);
-      } else {
-        $('.back-to-top').fadeOut(400);
       }
     });
+  } else if ( $("#mobile-nav, #mobile-nav-toggle").length ) {
+    $("#mobile-nav, #mobile-nav-toggle").hide();
+  }
 
-    $('.back-to-top').on('click',function(event) {
-      event.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 600);
-      return false;
-    })
+  // Smoth scroll on page hash links
+  $('a[href*="#"]:not([href="#"])').on('click', function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-/* Nivo Lightbox
-  ========================================================*/   
-   $('.lightbox').nivoLightbox({
-    effect: 'fadeScale',
-    keyboardNav: true,
+      var target = $(this.hash);
+      if (target.length) {
+        var top_space = 0;
+
+        if( $('#header').length ) {
+          top_space = $('#header').outerHeight();
+
+          if( ! $('#header').hasClass('header-fixed') ) {
+            top_space = top_space - 20;
+          }
+        }
+
+        $('html, body').animate({
+          scrollTop: target.offset().top - top_space
+        }, 1500, 'easeInOutExpo');
+
+        if ( $(this).parents('.nav-menu').length ) {
+          $('.nav-menu .menu-active').removeClass('menu-active');
+          $(this).closest('li').addClass('menu-active');
+        }
+
+        if ( $('body').hasClass('mobile-nav-active') ) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('#mobile-body-overly').fadeOut();
+        }
+        return false;
+      }
+    }
+  });
+
+  // Porfolio filter
+  $("#portfolio-flters li").click ( function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    var selectedFilter = $(this).data("filter");
+    $("#portfolio-wrapper").fadeTo(100, 0);
+
+    $(".portfolio-item").fadeOut().css('transform', 'scale(0)');
+
+    setTimeout(function() {
+      $(selectedFilter).fadeIn(100).css('transform', 'scale(1)');
+      $("#portfolio-wrapper").fadeTo(300, 1);
+    }, 300);
   });
 
 
-/* stellar js
-  ========================================================*/
-  $.stellar({
-    horizontalScrolling: true,
-    verticalOffset: 40,
-    responsive: true
-  });
+// custom code
 
-/* 
-   Page Loader
-   ========================================================================== */
-  $('#loader').fadeOut();
-
-}(jQuery));
-
+});
