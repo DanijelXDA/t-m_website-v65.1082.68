@@ -1,0 +1,396 @@
+*/
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  1. IMPORT GOOGLE FONTS
+  2. GENERAL
+    -2.1 SECTION TITLE
+    -2.2 BUTTONS
+    -2.3 SOCIAL ICON
+    -2.4 PRE LOADER
+    -2.5 SCROLL TO UP
+  3. HERO AREA
+  4. NAVBAR
+  5. SERVICES SECTION
+  6. FEATURES SECTION
+  7. VIDEO PROMO SECTION
+  8. PORTFOLIO SECTION
+  9. PRICING TABLE
+  10. COUNTER SECTION
+  11. TESTIMONIAL AREA
+  12. TEAM SECTION
+  13. BLOG SECTION
+  14. CONTACT SECTION
+  15. FOOTER SECTION
+    -15.1 COMING SOON PAGE
+  ------------------------------------- */
+/* ==========================================================================
+   1. IMPORT GOOGLE FONTS
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+/* ==========================================================================
+   2. GENERAL
+   ========================================================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+a:hover, a:focus {
+  color: #003366;
+}
+
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #fff;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: #003366;
+}
+
+/* ==========================================================================
+   2.1 Section Title
+   ========================================================================== */
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-header .section-title {
+  font-size: 42px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+}
+
+.section-header .section-title span {
+  color: #003366;
+}
+
+.section-header .section-subtitle {
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section-header .lines {
+  margin: auto;
+  width: 70px;
+  position: relative;
+  border-top: 2px solid #fff;
+  margin-top: 15px;
+}
+
+/* ==========================================================================
+   2.2 Buttons
+   ========================================================================== */
+.btn {
+  font-size: 14px;
+  padding: 11px 40px;
+  border-radius: 0px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+}
+
+.btn-common {
+  border: 1px solid #003366;
+  background: #003366;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.btn-common:hover {
+  color: #fff;
+  background: #33b391;
+  border-color: #33b391;
+  transition: all .50s ease-in-out;
+  -moz-transition: all .50s ease-in-out;
+  -webkit-transition: all .50s ease-in-out;
+}
+
+.btn-border {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+.btn-border:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #003366;
+}
+
+.btn-lg {
+  padding: 14px 33px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.btn-rm {
+  padding: 7px 0px;
+  color: #999;
+  text-transform: capitalize;
+}
+
+.btn-rm i {
+  vertical-align: middle;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ==========================================================================
+   2.3 Social Iocns
+   ========================================================================== */
+.social-icons {
+  margin-top: 40px;
+}
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons ul li {
+  display: inline;
+}
+
+.social-icons ul li a {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #ddd;
+  font-size: 16px;
+}
+
+.social-icons ul li a:hover {
+  color: #fff;
+}
+
+.facebook a {
+  color: #4867AA;
+}
+
+.facebook a:hover {
+  background: #4867AA;
+}
+
+.twitter a {
+  color: #1DA1F2;
+}
+
+.twitter a:hover {
+  background: #1DA1F2;
+}
+
+.google-plus a {
+  color: #DD4D42;
+}
+
+.google-plus a:hover {
+  background: #DD4D42;
+}
+
+.youtube a {
+  color: #DF2926;
+}
+
+.youtube a:hover {
+  background: #DF2926;
+}
+
+.linkedin a {
+  color: #007BB6;
+}
+
+.linkedin a:hover {
+  background: #007BB6;
+}
+
+.pinterest a {
+  color: #BD081C;
+}
+
+.pinterest a:hover {
+  background: #BD081C;
+}
+
+.dribbble a {
+  color: #EA4C89;
+}
+
+.dribbble a:hover {
+  background: #EA4C89;
+}
+
+.behance a {
+  color: #0B7CFF;
+}
+
+.behance a:hover {
+  background: #0B7CFF;
+}
+
+/* ==========================================================================
+  12. Team Section
+   ========================================================================== */
+.single-team:hover .team-details {
+  opacity: 1;
+}
+
+.single-team {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  background: #003366;
+  overflow: hidden;
+}
+
+.single-team img {
+  width: 100%;
+}
+
+.single-team .team-inner {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-team .team-details {
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 0px;
+  background: #f1f1f1;
+  padding: 15px;
+}
+
+.single-team .team-details .team-title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.single-team .team-details p {
+  color: #333;
+}
+
+.single-team .social-list li {
+  display: inline-block;
+}
+
+.single-team .social-list li a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  width: 34px;
+  margin: 2px;
+  color: #003366;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-team .social-list .facebook a:hover {
+  background: #4867aa;
+  color: #fff;
+}
+
+.single-team .social-list .twitter a:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.single-team .social-list .google-plus a:hover {
+  background: #dd4d42;
+  color: #fff;
+}
+
+.single-team .social-list .linkedin a:hover {
+  background: #007bb6;
+  color: #fff;
+}
