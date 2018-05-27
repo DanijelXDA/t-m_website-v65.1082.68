@@ -299,7 +299,7 @@
   margin: 0;
   padding: 115px 0 50px;
   position: relative;
-  background: rgba(0, 0, 0, 0) url("../images/bg33.jpg") no-repeat scroll center top / cover ;
+  background: url("../images/ps.png") no-repeat scroll center top / cover ;
 }
 
 .page-header .container {
@@ -333,7 +333,7 @@
 }
 
 .contact-text .container::after{
-    content: 'Contact';
+    content: 'Контакт';
 }
 
 .post-text .container::after{
@@ -345,7 +345,6 @@
 }
 
 .page-header::before {
-  background-color: rgba(71, 187, 181, 0.8);
   bottom: 0;
   content: "";
   height: 100%;
