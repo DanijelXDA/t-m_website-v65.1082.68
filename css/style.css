@@ -2454,14 +2454,15 @@ ul.post-info li {
 
 /*====================================	info container ===================================*/
 .info-container{
-    background-color: #444;
+    background-color: #333;
+	/* background-image: url('../images/dark_bg.jpg'); */
     padding-bottom: 0;
     position: relative;
 }
 
 .info-container:before {
   color: rgba(225, 225, 225, 0.03);
-  content: "Thanks";
+  content: "Хвала!";
   font-family: Montserrat;
   font-size: 252px;
   font-weight: 900;
