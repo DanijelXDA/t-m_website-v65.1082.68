@@ -1597,7 +1597,7 @@ lesshat-selector {
 }
 
 .carousel-inner > .item {
-  padding: 0 50px;
+    /*padding: 0 50px; */ /* Bad mobile version look */
 	min-height: 300px; 
 	height: 100%;
 	width:100%; 
