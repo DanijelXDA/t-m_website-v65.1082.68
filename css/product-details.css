@@ -329,15 +329,18 @@
 }
 
 .blog-text .container::after{
-    content: 'Blog';
+    content: 'Електротехника';
+	font-size:5vw;"
 }
 
 .contact-text .container::after{
     content: 'Контакт';
+	font-size:8vw;
 }
 
 .post-text .container::after{
     content: 'Вест';
+	font-size:8vw;
 }
 
 .about-text .container::after{
