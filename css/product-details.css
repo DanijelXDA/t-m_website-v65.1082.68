@@ -337,7 +337,7 @@
 }
 
 .post-text .container::after{
-    content: 'Post';
+    content: 'Вест';
 }
 
 .about-text .container::after{
