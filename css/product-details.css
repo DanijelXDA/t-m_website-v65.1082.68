@@ -334,12 +334,12 @@
 }
 
 .blog-text2 .container::after{
-    content: 'Машинство и обрада метала';
+    content: 'Машинство';
 	font-size:1vw;
 }
 
 .blog-text3 .container::after{
-    content: 'Текстилство и кожарство';
+    content: 'Текстилство';
 	font-size:2vw;"
 }
 
