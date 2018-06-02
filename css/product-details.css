@@ -329,15 +329,28 @@
 }
 
 .blog-text .container::after{
-    content: 'Blog';
+    content: 'Електротехника';
+	font-size:5vw;"
+}
+
+.blog-text2 .container::after{
+    content: 'Машинство и обрада метала';
+	font-size:2vw;"
+}
+
+.blog-text3 .container::after{
+    content: 'Текстилство и кожарство';
+	font-size:2vw;"
 }
 
 .contact-text .container::after{
     content: 'Контакт';
+	font-size:8vw;
 }
 
 .post-text .container::after{
-    content: 'Post';
+    content: 'Вест';
+	font-size:8vw;
 }
 
 .about-text .container::after{
