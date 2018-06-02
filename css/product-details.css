@@ -694,6 +694,11 @@
     background: #EFEFEF;
 }
 
+.reviews2.pravilnici {
+    background-image: none;
+    background: #EFEFEF;
+}
+
 .reviews1.about-review p {
     color: #777;
 }

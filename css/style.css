@@ -2032,7 +2032,6 @@ lesshat-selector {
     margin-top: 20px;
   letter-spacing: 1px;
   line-height: 1.8;
-  position: relative;
   z-index: 10000;
 }
 
