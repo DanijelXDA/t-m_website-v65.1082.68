@@ -335,12 +335,12 @@
 
 .blog-text2 .container::after{
     content: 'Машинство';
-	font-size:1vw;
+	font-size:5vw;
 }
 
 .blog-text3 .container::after{
     content: 'Текстилство';
-	font-size:2vw;"
+	font-size:5vw;"
 }
 
 .contact-text .container::after{
