@@ -690,11 +690,16 @@
 
 .reviews1.about-review {
     background-image: none;
-  bbackground: rgba(0, 0, 0, 0) url("../images/bg4.jpg") no-repeat scroll center top / cover ;
+    background: rgba(0, 0, 0, 0) url("../images/bg4.jpg") no-repeat scroll center top / cover ;
     background: #EFEFEF;
 }
 
 .reviews2.pravilnici {
+    background-image: none;
+    background: #EFEFEF;
+}
+
+.et.pravilnici {
     background-image: none;
     background: #EFEFEF;
 }
