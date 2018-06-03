@@ -1,0 +1,2467 @@
+html, body{
+  margin: 0;
+  padding: 0px;
+    overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.button {
+  background-color: #0059b3;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 30px 0;
+  padding: 16px 35px;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.section-title h2 {
+  border-bottom: 3px solid #163757;
+  color: #777;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.center-vertically{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	/*-ms-flex-align: center;*/
+}
+
+/* sufix prefix */
+.sufix-prefix{
+    position: relative;
+}
+
+.sufix-prefix::before {
+  border-bottom: 150px solid #fff;
+  border-right: 1000px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: -150px;
+  z-https://tehnickaskola.edu.rs: 1000;
+}
+
+.sufix-prefix::after {
+  border-bottom: 150px solid #fff;
+  border-left: 1000px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -150px;
+  z-https://tehnickaskola.edu.rs: 1000;
+}
+
+
+.sufix::after {
+  border-bottom: 150px solid #fff;
+  border-left: 2000px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -150px;
+  z-https://tehnickaskola.edu.rs: 1000;
+}
+
+.prefix::before {
+  border-bottom: 150px solid #fff;
+  border-right: 2000px solid transparent;
+  content: "";
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: -150px;
+  z-https://tehnickaskola.edu.rs: 1000;
+}
+
+.prefix-box::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+/* section angle bg */
+
+.angle-bg{
+	position: relative;
+	z-https://tehnickaskola.edu.rs: 1;
+}
+.angle-bg:before{
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transform: skewY(170deg);
+	transform: skewY(170deg);
+	width: 100%;
+	z-https://tehnickaskola.edu.rs: -1;
+    background:red;
+}
+
+.ribbon-green{ background-color: #62b951 !important; }
+.ribbon-yellow{ background-color: #e3db56 !important; }
+
+.ribbon-green.ribbon-float::before,
+.ribbon-green.ribbon-float::after { border-top-color : #62b951 !important; }
+
+.ribbon-yellow.ribbon-float::before,
+.ribbon-yellow.ribbon-float::after { border-top-color: #e3db56 !important; }
+
+/* pagination */
+.pagination {
+  border-radius: 4px;
+  display: inherit;
+  margin: 20px auto;
+  padding-left: 0;
+}
+
+.pagination > li > a {
+  background-color: #fff;
+  border: 1px solid #eee;
+  color: #163757;
+  font-weight: 500;
+  line-height: 1.42857;
+  padding: 8px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 42px;
+  float: none;
+}
+
+/*==================================== navbar ===================================*/
+.navbar{
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+	margin-top: 30px;
+    min-height: 70px;
+	border: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+  font-family: "Passion One",cursive;
+  font-size: 40px;
+  font-weight: 400;
+  min-height: 70px;
+  letter-spacing: 1px;
+  line-height: 1;
+  ppadding-top: 15px;
+  padding-top: 10px;
+}
+
+.navbar .navbar-brand img{
+    width: 120px;
+}
+
+.navbar-nav > li .navbar-btn {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.navbar-nav > li {
+	margin-top: 5px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:active, 
+.navbar .navbar-nav li a:focus {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:focus, 
+.navbar-inverse .navbar-nav > .active > a:hover {
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, 
+.navbar-inverse .navbar-nav > li > a:hover {
+	background-color: transparent;
+}
+
+.navbar-btn.btn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-bg .navbar-nav > li > a {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
+  border-radius: 3px;
+  border-width: 2px;
+  margin-top: 12px;
+  padding: 14px 11px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* dropdown */
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-inverse .dropdown-menu{
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #262626;
+    min-width: 220px; 
+    padding: 0;
+    margin-top: 10px !important;
+}
+
+.navbar-inverse .dropdown-menu > li > a {
+  border-bottom: 1px solid rgba(225, 225, 225, 0.06);
+  color: #999;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+  padding: 20px;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.navbar-inverse .dropdown-menu > li > a:focus, 
+.navbar-inverse .dropdown-menu > li > a:hover {
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav.navbar-left{
+    margin-left: -15px;
+}
+
+
+.navbar-nav.navbar-right{
+    margin-right: 0;
+}
+
+/* action after scroll */
+.navbar-bg{
+	padding-top: 0;
+	margin-top: 0;
+	background-color: #fff;
+    box-shadow: 0 1px #fff inset, 0 2px 5px rgba(34, 25, 25, 0.2);
+}
+
+.navbar-bg .cart-number {
+    background-color: #163757;
+}
+
+.navbar-bg .navbar-nav li a:active, 
+.navbar-bg .navbar-nav li a:focus {
+	color: #333;
+}
+
+.navbar-bg.navbar .navbar-brand {
+    color: #163757;
+}
+
+.navbar-bg .navbar-nav > li > a {
+    color: #333;
+}
+
+.navbar-bg .navbar-nav > li > a:hover,
+.navbar-bg .navbar-nav > li > a:hover {
+    color: #333;
+}
+
+.navbar-bg .navbar-nav > li > .navbar-btn.btn {
+    color: #333;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+.navbar-bg .navbar-nav > .active > a, 
+.navbar-bg .navbar-nav > .active > a:active, 
+.navbar-bg .navbar-nav > .active > a:focus, 
+.navbar-bg .navbar-nav > .active > a:hover {
+    color: #333;
+	background-color: transparent;
+	outline-color: transparent;
+}
+
+.navbar-bg .navbar-nav > .open > a, 
+.navbar-bg .navbar-nav > .open > a:focus,
+.navbar-bg .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    color: #333;
+}
+
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #c3c3c3;
+    margin-top: 5px;
+}
+
+.navbar-bg.navbar-inverse .navbar-toggle {
+  border-color: #888;
+  border-radius: 3px;
+  border-width: 2px;
+  margin-top: 12px;
+  padding: 14px 11px;
+}
+
+.navbar-bg.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #c3c3c3;
+}
+
+
+/*==================================== intro ===================================*/
+.intro {
+    height: 750px;
+    margin: 0;  
+    margin-top: 0px;
+    padding: 0;
+    position: relative;
+    background: radial-gradient(ellipse farthest-corner at center bottom, #0f488b, #163757);
+    color: #8b9095;
+}
+
+.intro.hello::before {
+  bottom: 33%;
+  color: rgba(225, 225, 225, 0.4);
+  content: "Hello";
+  font-family: Montserrat;
+  font-size: 180px;
+  font-weight: 900;
+  left: 0;
+  letter-spacing: 7px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.intro .content{
+    position: relative;
+    z-https://tehnickaskola.edu.rs: 1000;
+}
+
+.intro-title{
+    font-family: 'Passion One', cursive;
+    font-weight: 700;
+    color: #fff; 
+    font-size: 95px;
+}
+
+.ezone .intro-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.intro-title {
+	background-image: linear-gradient(to bottom, #fff, #aaa);
+	background-size: auto 250%;
+	transition: background-position 0.5s;
+	-webkit-background-clip: text;
+	-wwebkit-text-fill-color: transparent;
+}
+
+.ezone.new .intro-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.intro-tag {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  word-spacing: 2px;
+}
+
+.ezone .intro-tag {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin-top: 20px;
+  text-transform: lowercase;
+  max-width: 700px;
+  word-spacing: 2px;
+}
+
+.intro .button i{
+    font-size: 15px; 
+    margin-left: 8px
+}
+
+.intro .button{
+    border-radius: 0;
+    padding: 20px 40px;
+    box-shadow: 5px 6px 50px 0 rgba(50, 50, 50, 0.2);
+}
+
+
+.intro2{
+    background: #47BBB5;
+}
+.intro.wave::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60%;
+    background: url('../images/waves/big-wave1.png') no-repeat scroll right bottom /cover ;
+}
+
+.intro3{
+    background: url('../images/bg3.jpg') no-repeat scroll center top / cover;
+}
+
+.intro3::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(71, 187, 181 , 0.8);
+}
+
+.intro .tag-wrap{
+    display: inline-block;
+}
+
+/*==================================== particle ===================================*/
+body {
+  -webkit-font-smoothing: antialiased;
+  ttext-rendering: optimizeLegibility;
+  ffont-family: "proxima-nova-soft", sans-serif;
+  -fwebkit-user-select: none;
+}
+.vertical-centered-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.vertical-centered-box:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.vertical-centered-box .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 0;
+}
+* {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#particles-foreground {
+  left: -51%;
+  top: -41%;
+  width: 202%;
+  height: 202%;
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  -moz-transform: scale3d(0.5, 0.5, 1);
+  -ms-transform: scale3d(0.5, 0.5, 1);
+  -o-transform: scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+}
+
+
+/*==================================== call to action ===================================*/
+.call-to-action {
+    position: relative;
+    background: url('../images/bg5.jpg') no-repeat scroll center bottom / cover;
+    min-height: 300px;
+}
+
+.call-to-action::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/waves/small-wave.png') no-repeat scroll right bottom;
+}
+
+
+.call-to-action:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+
+.call-to-action .action-btn .button {
+    border-radius: 0; 
+    padding: 22px 40px;
+}
+
+
+.call-to-action .action-btn .button i{
+    padding-left: 20px;
+}
+
+ .call-to-action .action-btn {
+     position: relative;
+    z-https://tehnickaskola.edu.rs: 1000;
+    
+}
+
+.call-to-action .action-text{
+    text-align: left;
+}
+
+.call-to-action .action-text h3 {
+  color: #163757;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-spacing: 1px;
+    cursor: text;
+     position: relative;
+    z-https://tehnickaskola.edu.rs: 1000;
+}
+
+.call-to-action .action-text span {
+  color: #fff;
+  display: block;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 20px;
+    cursor: text;
+     position: relative;
+    z-https://tehnickaskola.edu.rs: 1000;
+}
+
+ .call-to-action .action-text strong{
+  color: #fff ;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+     cursor: text;
+     position: relative;
+    z-https://tehnickaskola.edu.rs: 1000;
+}
+
+/*====================================	product card 1 ===================================*/
+.ecommerce1{
+    position: relative;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.ecommerce1 .products {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  border-radius: 5px;    
+}
+
+.ecommerce1 .single-product {
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.ecommerce1 .single-product img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.ecommerce1 .product-overflow .list-unstyled{
+    margin: 0;
+}
+
+.ecommerce1 .product-overflow .list-unstyled li{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.ecommerce1 .product-overflow .list-unstyled li i::after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  opacity: 0.5;
+  position: absolute;
+  right: 11px;
+  width: 18px;
+}
+
+.ecommerce1 .product-overflow .list-unstyled li:last-child i::after {
+  opacity: 0;
+}
+
+.ecommerce1 .product-overflow .list-unstyled li:first-child i{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-top: -50px;
+}
+
+.ecommerce1 .product-overflow .list-unstyled li:last-child i{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #163757;
+}
+
+.ecommerce1 .single-product:hover .product-overflow i{
+    margin-top: 0;
+}
+
+.ecommerce1 .product-overflow i{
+    background-color: #163757;
+    width: 40px; 
+    height: 40px;
+    padding-top: 14px;
+    color: #fff;
+    margin-top: 50px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.ecommerce1 .ribbon-float {
+    background-color: #ef476f;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    left: 20px;
+    letter-spacing: 1.5px;
+    padding: 6px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 70px;
+    z-https://tehnickaskola.edu.rs: 5;
+}
+
+.ecommerce1 .ribbon-float::after {
+    border-right: 11px solid transparent;
+    border-top: 32px solid #ef476f;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -11px;
+    top: 0;
+    z-https://tehnickaskola.edu.rs: 5;
+    
+}
+
+.ecommerce1 .single-product:hover .ribbon-right { opacity: 0; }
+
+.ecommerce1 .ribbon-right {
+  background-color: #163757;
+  border-top-right-radius: 5px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  height: 55px;
+  letter-spacing: 1.5px;
+    padding-top: 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 55px;
+  z-https://tehnickaskola.edu.rs: 5;
+    opacity: 1;
+}
+
+.ecommerce1 .product-text {
+	background-color: #fff;
+	padding: 25px 15px;
+	z-https://tehnickaskola.edu.rs: 2;
+    border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.ecommerce1 .product-text strong {
+  color: #777;
+  display: block;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.ecommerce1 .product-text span {
+  color: #163757;
+  display: block;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.ecommerce1 .product-text .list-inline i{
+    color: #ffbc42;
+    font-size: 10px;
+}
+
+.ecommerce1 .product-text .list-inline > li {
+  margin-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ecommerce1 .product-overflow{
+    position: absolute;
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0); 
+    z-https://tehnickaskola.edu.rs: 2;
+}
+
+.ecommerce1 .single-product:hover .product-overflow{
+    opacity: 1;
+}
+
+.ecommerce1 .single-product:hover:before{
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.ecommerce1 .single-product:hover:after{
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.ecommerce1 .single-product:before{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.05);
+    top: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 0;
+    z-https://tehnickaskola.edu.rs: 0;
+}
+
+.ecommerce1 .single-product::after {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.05) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  width: 0;
+  z-https://tehnickaskola.edu.rs: 0;
+}
+
+/* pro slide */
+.single-product img {
+  margin-bottom: 0;
+}
+
+.pro-slide.owl-theme .owl-controls .owl-page span{
+    background-color: #163757;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.pro-slide.owl-carousel .owl-controls {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -105px;
+}
+
+/* tab slider */
+.tab-content .pro-slide.owl-carousel .owl-controls {
+  margin-top: -15px;
+  top: 50%;
+  width: 100%;
+}
+
+.tab-content .pro-slide.owl-carousel .owl-controls .owl-nav .owl-prev{ position: absolute; left: 0; margin: 0;}
+.tab-content .pro-slide.owl-carousel .owl-controls .owl-nav .owl-next{ position: absolute; right: 0; margin: 0;}
+
+.pro-slide.owl-carousel .owl-controls .owl-nav .owl-prev,
+.pro-slide.owl-carousel .owl-controls .owl-nav .owl-next{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pro-slide.owl-carousel .owl-controls .owl-nav i {
+  background-color: #163757;
+  border: 1px solid #163757;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  padding-top: 7px;
+  width: 30px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.pro-slide:hover.owl-carousel .owl-controls .owl-nav i {
+    opacity: 1;
+}
+
+.pro-slide2.owl-carousel .owl-controls .owl-nav i {
+    opacity: 1;
+    border-radius: 0;
+}
+
+.pro-slide.owl-carousel .owl-controls .owl-nav .owl-next i{
+    margin-right: -2px;
+}
+
+/* product-tabs */
+.tab-panel .nav{
+    margin-bottom: 30px;
+}
+
+.tab-panel .nav{
+	margin-bottom: 10px;
+}
+
+.tab-panel .tab-content {
+  background-color: transparent;
+  min-height: 320px;
+  padding: 32px 0 40px;
+}
+
+.tab-panel .nav-pills > li.active > a, 
+.tab-panel .nav-pills > li.active > a:focus, 
+.tab-panel .nav-pills > li.active > a:hover {
+  background-color: #163757;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  ppadding-left: 35px;
+  text-transform: capitalize;
+}
+
+..tab-panel .nav-pills > li.active > a::before {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 8px;
+	height: 8px;
+	top: 16px;
+	left: 16px;
+	border-radius: 30px;
+}
+
+.tab-panel .nav > li > a {
+  background-color: transparent;
+  border-radius: 0;
+  color: #555;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-right: 6px;
+  padding: 10px 20px;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.2s ease 0s;
+}
+
+.tab-panel .nav-pills > li > a:hover {
+	color: #fff;
+	background-color: #163757;
+}
+
+.tab-panel .tab-panel img {
+    margin-bottom: 0;
+}
+
+.tab-panel .nav-pills > li {
+  float: none;
+  display: inline-block;
+}
+
+
+
+/*====================================	product card 2 ===================================*/
+.ecommerce2{
+    background-color: #efefef;
+}
+
+.ecommerce2 .products {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.ecommerce2 .single-product {
+  overflow: hidden;
+  position: relative;
+}
+
+.ecommerce2 .single-product img{
+    width: 100%;
+}
+
+.ecommerce2 .product-overflow .list-inline{
+    margin: 0;
+}
+
+.ecommerce2 .product-overflow .list-inline li{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 -2px 0 -2px;
+    position: relative;
+}
+
+.ecommerce2 .product-overflow .list-inline li i::after {
+  background-color: #fff;
+  content: "";
+  height: 18px;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 1px;
+}
+
+.ecommerce2 .product-overflow .list-inline li:last-child i::after {
+  opacity: 0;
+}
+
+.ecommerce2 .single-product:hover .product-overflow i{
+    margin-top: 0;
+}
+
+.ecommerce2 .product-overflow i{
+    display: block;
+    background-color: #163757;
+    width: 40px; 
+    height: 40px;
+    padding-top: 14px;
+    color: #fff;
+    margin-top: 100px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.ecommerce2 .ribbon-float {
+  background-color: #163757;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  left: 50%;
+  letter-spacing: 1.5px;
+  margin-left: -35px;
+  padding: 6px 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.03);
+  text-transform: uppercase;
+  top: 0;
+  width: 70px;
+  z-https://tehnickaskola.edu.rs: 5;
+}
+
+.ecommerce2 .ribbon-float::after {
+    border-right: 16px solid transparent;
+    border-top: 32px solid #163757;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -16px;
+    top: 0;
+    z-https://tehnickaskola.edu.rs: 5;
+    
+}
+
+.ecommerce2 .ribbon-float::before {
+  border-left: 16px solid transparent;
+  border-top: 32px solid #163757;
+  content: "";
+  display: inline-block;
+  left: -16px;
+  position: absolute;
+  top: 0;
+  z-https://tehnickaskola.edu.rs: 5;
+}
+
+.ecommerce2 .product-text {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 25px 15px;
+	z-https://tehnickaskola.edu.rs: 2;
+}
+
+.ecommerce2 .product-text strong {
+  color: #777;
+  display: block;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.ecommerce2 .product-text > div {
+    text-align: center;
+}
+
+.ecommerce2 .product-text span {
+  background-color: #bbb;
+  border-radius: 50px;
+  color: #222;
+  display: inline;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  text-align: center;
+}
+
+.ecommerce2 .product-text .list-inline i{
+    color: #ffbc42;
+    font-size: 10px;
+}
+
+.ecommerce2 .product-text .list-inline > li {
+  margin-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ecommerce2 .product-overflow{
+    position: absolute;
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0); 
+    z-https://tehnickaskola.edu.rs: 2;
+}
+
+.ecommerce2 .single-product:hover .product-overflow{
+    opacity: 1;
+}
+
+.ecommerce2 .single-product:hover:before{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    transform: skew( 0, 180deg );
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.4s ease 0s;
+    opacity: 1;
+    
+}
+
+.ecommerce2 .single-product::before {
+  backface-visibility: hidden;
+  background: rgba(225, 225, 225, 0.5) none repeat scroll 0 0;
+  content: "";
+  height: 20px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+  transition: all 0.4s ease-in-out 0s;
+  width: 20px;
+  z-https://tehnickaskola.edu.rs: 0;
+    opacity: 0;
+}
+
+/*====================================	product card 3 ===================================*/
+.ecommerce3{
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.ecommerce3 .products {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  border-radius: 5px;    
+}
+
+.ecommerce3 .single-product {
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.ecommerce3 .single-product:hover img{
+    transform: scale(1.15)
+}
+.ecommerce3 .single-product img{
+    width: 100%;
+    transform: scale(1);
+}
+
+.ecommerce3 .product-overflow .list-unstyled{
+    margin: 0;
+}
+
+.ecommerce3 .product-overflow .list-unstyled li{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.ecommerce3 .product-overflow .list-unstyled li i::after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  opacity: 0.5;
+  position: absolute;
+  right: 11px;
+  width: 18px;
+}
+
+.ecommerce3 .product-overflow .list-unstyled li:last-child i::after {
+  opacity: 0;
+}
+
+.ecommerce3 .product-overflow .list-unstyled li:first-child i{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-top: -50px;
+}
+
+.ecommerce3 .product-overflow .list-unstyled li:last-child i{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #163757;
+}
+
+.ecommerce3 .single-product:hover .product-overflow i{
+    margin-top: 0;
+}
+
+.ecommerce3 .product-overflow i{
+    background-color: #163757;
+    width: 40px; 
+    height: 40px;
+    padding-top: 14px;
+    color: #fff;
+    margin-top: 50px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.ecommerce3 .ribbon-float {
+    background-color: #ef476f;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    left: 20px;
+    letter-spacing: 1.5px;
+    padding: 6px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 70px;
+    z-https://tehnickaskola.edu.rs: 5;
+}
+
+.ecommerce3 .ribbon-float::after {
+    border-right: 11px solid transparent;
+    border-top: 32px solid #ef476f;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -11px;
+    top: 0;
+    z-https://tehnickaskola.edu.rs: 5;
+    
+}
+
+.ecommerce3 .ribbon-right {
+  background-color: #163757;
+  border-radius: 50px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  height: 55px;
+  letter-spacing: 1.5px;
+  padding-top: 20px;    
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 15px;
+  width: 55px;
+  z-https://tehnickaskola.edu.rs: 5;
+}
+
+.ecommerce3 .product-text {
+	background-color: #fff;
+	padding: 25px 15px;
+	z-https://tehnickaskola.edu.rs: 2;
+    border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.ecommerce3 .product-text strong {
+  color: #777;
+  display: block;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.ecommerce3 .product-text span {
+  color: #163757;
+  display: block;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.ecommerce3 .product-text .list-inline i{
+    color: #ffbc42;
+    font-size: 10px;
+}
+
+.ecommerce3 .product-text .list-inline > li {
+  margin-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ecommerce3 .product-overflow {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 40px;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 40px;
+  z-https://tehnickaskola.edu.rs: 2;
+}
+
+.ecommerce3 .single-product:hover .product-overflow{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.ecommerce3 .single-product:hover:before{
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.ecommerce3 .single-product:before{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.05);
+    top: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 0;
+    z-https://tehnickaskola.edu.rs: 0;
+}
+
+/*====================================	bootstrap carousel ===================================*/
+
+.carousel-indicators {
+	bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+	background-image: none;
+}
+
+.carousel-inner > .item {
+    /*padding: 0 50px; */ /* Bad mobile version look */
+	min-height: 300px; 
+	height: 100%;
+	width:100%; 
+}
+
+.carousel-inner.new > .item {
+  min-height: 250px;
+}
+
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+	background-color: #09c;
+}
+.carousel-caption h3 {
+	padding: .5em;
+}
+.carousel .icon-container {
+	display: inline-block;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 1em;
+	text-align: center;
+	border-radius: 50%;
+}
+.carousel-caption button {
+	border-color: #00bfff;
+	margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption .intro-title:first-child {
+	animation-delay: 1s;
+}
+.carousel-caption .intro-title:nth-child(2) {
+	animation-delay: 2s;
+}
+.carousel-caption button {
+	animation-delay: 3s;
+}
+
+
+/* indicators */
+.carousel-indicators li {
+  border-radius: 0;
+  height: 11px;
+  margin: 3px;
+  transform: rotate(45deg);
+  width: 11px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  height: 11px;
+  margin: 3px;
+  width: 11px;
+}
+
+
+/* arrow */
+.carousel-control {
+  opacity: 1;
+  text-shadow: none;
+  top: 50%;
+    margin-top: -17.5px;
+  width: auto;
+}
+
+.carousel-control i:hover {
+  background-color: #163757;
+    border: 1px solid #163757;
+    color: #fff;
+}
+    
+.carousel-control i {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  height: 35px;
+  padding-top: 11px;
+  text-align: center;
+  width: 35px;
+}
+
+.carousel-control.left i {
+    padding-right: 2px;
+    padding-left: 0;
+}
+
+.carousel-control.right i {
+    padding-right: 0;
+    padding-left: 2px;
+}
+
+/* slider bg */
+.intro4{
+    background: url('../images/header-background.jpg') no-repeat scroll left -40px ;
+}
+
+.carousel-bg{
+    background-color: #EFEFEF;
+    z-https://tehnickaskola.edu.rs: 1000;
+    margin-top: 100px;
+}
+
+.carousel-bg .ezone .intro-title  {
+    color: #163757;
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.carousel-bg .ezone .intro-tag {
+  color: #666;
+  display: inline-block;
+  font-weight: 400;
+  max-width: 565px;
+    font-size: 14px;
+}
+
+.carousel-bg .carousel-inner {
+    min-height: 500px;
+}
+
+.carousel-bg .carousel .item {
+    min-height: inherit;
+}
+
+.carousel-bg .carousel-control {
+  margin-left: 0;
+  margin-right: 0;
+    opacity: 0;
+}
+
+.carousel-bg:hover .carousel-control {
+  margin-left: 25px;
+  margin-right: 25px;
+    opacity: 1;
+}
+
+.carousel-bg .carousel-control i:hover {
+  background-color: #163757;
+    border: 1px solid #163757;
+    color: #fff;
+}
+    
+.carousel-bg .carousel-control i {
+  background-color: transparent;
+    border: 1px solid #777;
+  color: #777;
+}
+
+.carousel-bg .carousel-control.left i {
+    margin-right: 30px;
+}
+
+.carousel-bg .carousel-control.right i {
+    
+}
+
+.carousel-bg .img-holder{
+    position: relative;
+}
+
+.carousel-bg .ribbon-right {
+  background-color: #163757;
+  border-radius: 50px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  height: 55px;
+  letter-spacing: 1.5px;
+  padding-top: 20px;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 15px;
+  width: 55px;
+  z-https://tehnickaskola.edu.rs: 5;
+}
+
+.carousel-bg .ribbon-left.left {
+    left: 0;
+}
+
+.carousel-bg .ribbon-float {
+  background-color: #fff;
+  border-radius: 3px;
+  bottom: 0;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #163757;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  height: 60px;
+  letter-spacing: 1.5px;
+  margin-right: -75px;
+  padding-top: 15px;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+  z-https://tehnickaskola.edu.rs: 5;
+}
+
+/* Bootstrap carousel Animation */
+.carousel-bg .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-bg .carousel-inner .item,
+.carousel-bg .carousel-inner .active.left,
+.carousel-bg .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-bg .carousel-inner .active,
+.carousel-bg .carousel-inner .next.left,
+.carousel-bg .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-bg .carousel-inner .next,
+.carousel-bg .carousel-inner .prev,
+.carousel-bg .carousel-inner .active.left,
+.carousel-bg .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.carousel-bg .carousel-control {
+  z-https://tehnickaskola.edu.rs: 2;
+}
+/*====================================	features 1 ===================================*/
+
+.pad-0 {
+    .padding-right: 0;
+    .padding-left: 0;
+    position: relative;
+}
+
+.feature-card::after {
+  border-left: 1px solid #163757;
+  content: "";
+  height: 100%;
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+
+.feature-card::before {
+  border-top: 1px solid #163757;
+  content: "";
+  left: -30px;
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pad-0:last-child .feature-card::after {
+    display: none;
+}
+
+.pad-0:first-child .feature-card::before {
+  left: 0;
+}
+
+.features{
+    background-color: #F5F5F5;
+    padding-top: 0;
+}
+
+.feature-wrap {
+  background-color: #fff;
+  border-top: 2px solid #163757;
+  margin-top: -40px;
+  position: relative;
+}
+
+.feature-wrap::after {
+  border-bottom: 40px solid #163757;
+  border-left: 20px solid transparent;
+  content: "";
+  display: inline-block;
+  left: -20px;
+  position: absolute;
+  top: -2px;
+  z-https://tehnickaskola.edu.rs: 1000;
+}
+
+.feature-card {
+    position: relative;
+    text-align: center;
+}
+
+.feature-card i {
+  color: #163757;
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.feature-card h3 {
+  color: #333;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 65px;
+}
+
+.feature-card a.feature-link:hover {
+  border-color: #163757;
+  color: #163757;
+    
+}
+
+.feature-card a.feature-link {
+  border-bottom: 1px solid #999;
+  color: #888;
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  margin-top: 16px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/*====================================	features 2 ===================================*/
+
+.features2{
+    background-color: #F5F5F5;
+    padding-bottom: 150px
+}
+
+.feature-content {
+  margin: 30px 0 0 15px;
+}
+
+.features2 strong {
+  color: #163757;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 800;   
+}
+
+.features2 h3 {
+  color: #222;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.features2 p {
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.features2 .button {
+  border-radius: 0;
+  font-style: italic;
+  padding: 12px 30px;
+}
+
+/*====================================	clients ===================================*/
+
+.features3 .feature-box{
+    background-color: #F5F5F5;
+}
+
+.features3 .feature-box img{
+    margin-top: -60px;
+    margin-left: 40px; 
+    margin-bottom: 40px;
+}
+
+.features3 .feature-content {
+  margin: 40px 0 0 60px;
+}
+
+.features3 strong{
+    font-size: 25px;
+}
+
+.features3  h3 {
+  color: #222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.features3 .button {
+  border-radius: 0;
+  font-weight: 500;
+  padding: 12px 30px;
+}
+
+.features3 span {
+  color: #222;
+  display: block;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+/*====================================	reviews 1 ===================================*/
+.reviews1 {
+    position: relative;
+    background-color: #ccc;
+}
+
+.reviews1{
+    background: url('../images/bg4.jpg') no-repeat scroll top center /cover;
+}
+
+.reviews1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+} 
+
+.reviews1 .review-img {
+    position: relative;
+    display: inline-block;
+}
+
+.reviews1 p {
+  color: #fff;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin: 30px auto;
+  max-width: 840px;
+  z-https://tehnickaskola.edu.rs: 10000;
+}
+.reviews1 .review-img i {
+    color: #163757;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+.reviews1 .review-img img {
+    max-width: 110px; 
+    border-radius: 50%;
+}
+
+.reviews1 strong {
+  color: #163757;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.reviews1 strong > span {
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.reviews1 .carousel-control.right i,
+.reviews1 .carousel-control.left i{
+    color: #fff;
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    background-color: rgba(225, 225, 225, 0.2);
+}
+
+.reviews1 .carousel-control.right i:hover,
+.reviews1 .carousel-control.left i:hover{
+    border: 1px solid transparent;
+    background-color: #163757;
+}
+/*====================================	reviews 2 ===================================*/
+.reviews2{
+    position: relative;
+    background-color: #bbb;
+    padding: 100px 0 135px;
+}
+
+.reviews2{
+    background: url('../images/bg3.jpg') no-repeat scroll top center /cover;
+}
+
+.reviews3 {
+    background: rgba(0, 0, 0, 0) url("../images/ist.jpg") no-repeat scroll center top / cover ;
+}
+
+.reviews2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-https://tehnickaskola.edu.rs: 
+} 
+
+.customer-say {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  position: relative;
+  z-https://tehnickaskola.edu.rs: 1000;
+  text-align: center;
+}
+
+.reviews2 .review-img {
+    display: block;
+}
+
+.reviews2 .review-img > div{
+    position: relative;
+    display: inline-block;
+}
+
+.reviews2 p {
+  color: #fff;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 300;
+    margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  z-https://tehnickaskola.edu.rs: 10000;
+}
+
+.reviews2 strong {
+  color: #163757;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.reviews2 strong > span {
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.reviews2 .review-img img {
+    max-width: 135px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.reviews2 .review-img i {
+    color: #163757;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+.reviews2 .carousel-inner {
+    min-height: 170px;
+    overflow: visible;
+}
+
+.reviews2 .carousel-inner > .item {
+  min-height: auto;
+}
+
+.reviews2 .carousel-control.right{
+    right: 50%;
+    margin-right: -45px;
+}
+
+.reviews2 .carousel-control.right i,
+.reviews2 .carousel-control.left i{
+    color: #fff;
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    background-color: rgba(225, 225, 225, 0.2);
+}
+
+.reviews2 .carousel-control.right i:hover,
+.reviews2 .carousel-control.left i:hover{
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #163757;
+}
+
+
+.reviews2 .carousel-control.left{
+    left: 50%;
+    margin-left: -45px;
+}
+
+.reviews2 .carousel-control {
+  margin-top: 0;
+  top: 100%;
+}
+
+/*====================================	clients ===================================*/
+.clients{
+    margin-top: 50px;
+}
+
+..clients .single-slide {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 6px 8px 0 rgba(50, 50, 50, 0.2);
+  cursor: e-resize;
+  height: 80px;
+  padding: 10px 15px;
+}
+
+.clients.owl-theme .owl-controls {
+  margin-top: 0;
+}
+
+.clients .single-slide:hover .screenshot-overflow i{
+    opacity: 1;
+}
+
+.clients .single-slide .screenshot-overflow i{
+    color: #ffffff;
+    font-size: 40px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    opacity: 0;
+}
+
+.clients .single-slide:hover .screenshot-overflow{
+    opacity: 1;
+}
+
+.clients .single-slide .screenshot-overflow{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0; 
+    bottom: 0; 
+    opacity: 0;
+    overflow: hidden;
+}
+
+.clients.owl-carousel .owl-item img {
+    width: auto;
+    max-width: 100% !important;
+    margin: 0 auto;
+}
+
+.clients.owl-theme .owl-controls .owl-page span{
+    background-color: #163757;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.clients.owl-carousel .owl-controls {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.clients.owl-carousel .owl-controls .owl-nav .owl-prev,
+.clients.owl-carousel .owl-controls .owl-nav .owl-next{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.clients.owl-carousel .owl-controls .owl-nav i {
+  background-color: #163757;
+  border: 1px solid #163757;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  padding-top: 7px;
+  width: 30px;
+}
+
+.clients.owl-carousel .owl-controls .owl-nav .owl-next i{
+    margin-right: -2px;
+}
+
+
+/*====================================	blog ===================================*/
+.blog{
+    background-color: #EFEFEF;
+}
+
+.blog h4 {
+  color: #444;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.blog-details p {
+  color: #777;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.blog-post{
+    background: #ffffff;
+    margin-bottom: 40px;
+}
+
+.post-img{
+    position: relative;
+}
+
+.post-img img{
+    width: 100%;
+}
+
+.post-img .date {
+  background-color: #fff;
+  color: #163757;
+  display: block;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  padding-top: 8px;
+  position: absolute;
+  right: 15px;
+  text-transform: uppercase;
+  top: 15px;
+  width: 100px;
+}
+
+.post-img .date span{
+  font-family: Montserrat;
+  letter-spacing: 2px;
+}
+
+ul.post-info{
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    bottom: -40px;
+    margin: 0; 
+    line-height: 2;
+    height: 40px;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+ul.post-info li i{
+    font-size: 12px; 
+    margin-right: 5px;
+}
+
+ul.post-info li.post-tag {
+  background-color: #163757;
+  display: block;
+  float: left;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  height: 40px;
+  left: 0;
+  letter-spacing: 2px;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100px;
+}
+
+ul.post-info li {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.post-info > li::after {
+    color: #ffffff;
+    content: " | ";
+    padding-left: 7px;
+    letter-spacing: 1.5px;
+}
+
+.post-info > li:first-child:after,
+.post-info > li:last-child:after {
+    display: none;
+}
+
+.blog-post .blog-details .list-inline{
+    margin: 0;
+    margin-top: 20px;
+    display: block;
+}
+
+.blog-post .blog-details .list-inline > li {
+  color: #163757;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 0;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.blog-post .blog-details .list-inline > li:last-child{
+    padding-left: 10px; 
+    padding-right: 0;
+}
+
+.blog-post .blog-details{
+    padding: 70px 25px 30px;
+}
+
+/*====================================	info container ===================================*/
+.info-container{
+    background-color: #333;
+	/* background-image: url('../images/dark_bg.jpg'); */
+    padding-bottom: 0;
+    position: relative;
+}
+
+.info-container:before {
+  color: rgba(225, 225, 225, 0.03);
+  content: "Хвала!";
+  font-family: Montserrat;
+  font-size: 252px;
+  font-weight: 900;
+  left: 0;
+  letter-spacing: 7px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20%;
+  width: 100%;
+}
+
+
+.info-container .row{
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.info-container .info-title {
+  color: #777;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.info-container ul.list-unstyled li,
+.info-container ul.list-inline li {
+    color: #aaa;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+    display: block;
+  text-transform: capitalize;
+}
+
+.info-container ul.list-unstyled > li {
+    display: inline !important;
+}
+
+.info-container ul.list-unstyled li a,
+.info-container ul.list-inline li a {
+    color: #aaa;
+}
+
+.info-container ul.list-unstyled li i {
+  color: #999;
+  font-size: 15px;
+    padding: 0 5px;
+}
+
+
+
+.subscribe-form {
+    margin-bottom: 30px;
+}
+
+.subscribe-form .form-control {
+  background-color: #555;
+  border: 0 none;
+  box-shadow: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  height: 45px;
+    font-size: 12px;
+  letter-spacing: 1px;
+  color: #aaa;
+    border-radius: 0;
+}
+
+.subscribe-form  .subscribe-btn .fa{
+    margin-left: 5px;
+}
+
+.subscribe-form .subscribe-btn {
+  background-color: #163757;
+  border: 0 none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  height: 45px;
+  min-width: 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.info-container .footer-logo {
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+/*====================================	footer ===================================*/
+.footer{
+    background-color: #003366;
+    padding: 0 0 50px;
+}
+
+.footer .row-border{
+    border-top: 1px solid #555;
+    padding-top: 50px;
+}
+
+.footer p {
+  color: #aaa;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.footer p a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.footer p a:hover{
+    color: #aaa;
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    
+    .col-lg-3,
+    .col-md-3,
+    .col-sm-3 {
+      max-width: 375px;
+    }
+    
+    .ecommerce1 .col-md-3,
+    .ecommerce2 .col-md-3,
+    .ecommerce3 .col-md-3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .intro {
+      height: 1000px;
+    }
+    
+}
