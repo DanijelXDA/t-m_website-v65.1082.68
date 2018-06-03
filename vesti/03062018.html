@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -129,7 +129,7 @@
 			<br/>
         </section>
         
-    <!-- info container -->
+     <!-- info container -->
     <section class="info-container" style="background: transparent; color: white; background-color: rgba(0, 0, 0, 0.5);">
         <br/>
         <br/>
@@ -139,7 +139,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <div><img class="img-responsive footer-logo" src="images/tsm-logo.png" alt="" /></div>
+                    <div><img class="img-responsive footer-logo" src="../images/tsm-logo.png" alt="" /></div>
                     <ul class="list-inline">
                         <li style="color: white;">Вука Караџића 75, </li>
                         <li style="color: white;">Младеновац, Србија </li>
@@ -158,16 +158,21 @@
                         <li><a href="https://github.com/DanijelXDA/" target="_blank"><i class="fa fa-github" style="color: white;"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-5 col-sm-12">
+               <div class="col-md-5 col-sm-12">
                     <div class="info-title" style="color: white;">Буди у току</div>
-                    <div class="input-group subscribe-form input-group-lg">
-                        <input type="text" class="form-control" placeholder="e-mail адреса..." aria-describedby="sizing-addon1" style="background-color: white;">
-                        <span class="input-group-addon subscribe-btn" id="sizing-addon1"><i class="fa fa-envelope-o"></i></span>
-                    </div>
-                </div>
-            </div>
         </div>
+		<form method="post" action="store.php">
+		<div class="input-group">
+   <input type="email" name="email" id="email" class="form-control" placeholder="e-mail адреса...">
+   <span class="input-group-btn">
+        <button class="btn btn-default" style="background-color: #2e6da4; color: #fff;" type="submit" action="store.php">Пошаљи</button>
+   </span>
+</div>
+</form>
+</div></div>
 
+        <br/>
+        <br/>
         <br/>
         <br/>
         <p style="text-align: center;">&copy; 2018. Техничка школа Младеновац | Сва права задржана.</p>
