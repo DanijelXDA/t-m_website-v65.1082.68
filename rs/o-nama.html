@@ -130,9 +130,35 @@
                             <br/> једној од секција.
                             <br/>
                         </p>
-                        <a href="#" class="btn btn-info button">Секције</a>
+						<!-- DODAJ LINK a href="#" --> 
+                        <a class="btn btn-info button" data-toggle="modal" data-target="#warning">Секције</a>
                     </div>
                 </div>
+				<!-- UPOZORENJE NEDOVRSEN DEO ! -->
+				<div class="modal fade" id="warning" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+				 style="background-color: #163757; background-image: url('images/ps.png'); color: gray;">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Обавештење</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						Бити Мејнтер сајта није лак посао... <br/>
+						На одржавању сајта раде тимови, не појединци!<br/>
+						Секције постоје али страница за њих није одрађена.<br/>
+						Молимо за стрпљење и страница ће бити доступно у неком року.<br/><br/>
+						Хвала :)
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Затвори прозор</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+								<!-- KRAJ UPOZORENJE NEDOVRSEN DEO ! -->
                 <div class="col-md-6 col-sm-12">
                     <div class="single-content">
                         <h3>Монографија</h3>
