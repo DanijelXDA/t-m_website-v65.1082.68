@@ -2,11 +2,11 @@
         var un = document.loginform.usr.value;
         var pw = document.loginform.pword.value;
 		
-        var u1 = "d.jovanovic"; 
-        var p1 = "sifraJeSifra";
+               var u1 = "d.jovanovic"; 
+               var p1 = "sifraJeSifra";
 		
-		var u2 = "p.matovic";
-		var p2 = "sifraJePasvord";
+		var u2 = "tsm@ucenik";
+		var p2 = "12345678";
 		
 		var u3 = "s.maricic";
 		var p3 = "sifraNijeSifra";
