@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Почетна</title>
+  <meta name="description" content="Техничка школа Младеновац - Будућност у коју верујемо годинама, доступна је свакоме ко упише Техничку школу.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/font-awesome.min.css">
+  <link rel="stylesheet" href="css/shards.min.css?v=2.0.1">
+  <link rel="stylesheet" href="css/shards-demo.min.css?v=2.0.1">
+</head>
+
+<body oncontextmenu="return false"> <!-- Disable right click on page -->
+  <div class="loader">
+    <div class="page-loader"></div>
+  </div>
+
+  
+  <!-- Floating Logo -->
+  <img src="images/tsm.png" alt="Future" class="shard">
+		  
+  <!-- Login Section -->
+  <div class="welcome d-flex justify-content-center flex-column" style="background-image: url('images/shapeBg.png');">
+    <div class="inner-wrapper mt-auto mb-auto">
+	
+      <h2 class="slide-in" style="margin-top: 17%;">  Пријави се</h2>
+      <p class="slide-in">За приступ заштићеном делу сајта потребно је унети валидне податке за логовање.</p>
+				  <!-- Danger Dismissible Alert -->
+				  <div id="myDIV" style="display: none; margin-left: 26%; margin-right: 26%; align: center;" class="alert alert-danger alert-dismissible fade show" role="alert">
+					<i class="fa fa-exclamation-circle"></i>
+					<strong>Упсс... </strong>Погрешни подаци!
+				  </div>
+				  
+      <div class="row mb-2">
+            <div class="col-12">
+			
+			          
+			<center>
+              <form name="loginform" onSubmit="return validateForm();" action="https://tehnickaskola.edu.rs/98d59f40-1378-495c-828c-584fdv71988f/materijali" method="post" autocomplete="off">
+                <div class="flex-column align-self-center" style="margin-top: 2%; margin-bottom: 2%;">
+                  <div class="form-group col-md-6">
+                    <div class="input-group input-group-seamless">
+                      <span class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-user"></i>
+                        </span>
+                      </span>
+                      <input type="text" class="form-control" id="usr" name="usr" placeholder="Корисничко име">
+                    </div>
+                  </div>
+                   <div class="form-group col-md-6">
+                    <div class="input-group input-group-seamless">
+                      <span class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                      </span>
+                      <input type="password" class="form-control" id="pword" name="pword" placeholder="Лозинка">
+                    </div>
+                  </div>
+                </div>
+					<div class="action-links slide-in" style="margin-bottom: 5%;">
+						<button type="submit" class="btn btn-primary btn-pill align-self-center mr-2"><i class="fa fa-user mr-1"></i>
+						Пријава корисника</button>
+					</div>
+              </form>
+			  </center>
+            </div>
+          </div>
+    <div class="product-by">
+      <a href="https://github.com/DanijelXDA" target="_blank">
+        <p>Дизајнирано од стране</p>
+        <img src="images/copy.jpg" alt="Copyright C 2018" width="120px" height="70px">
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="bootstrap/buttons.js"></script>
+  <script src="bootstrap/jquery-3.2.1.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="js/shards.min.js"></script>
+  <script src="js/demo.min.js"></script>
+  <script src="js/jVery.js"></script>
+
+</body>
+
+</html>
