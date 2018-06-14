@@ -15,13 +15,13 @@
     </head>
     <body class="shards-app-promo-page--1">
       <!-- Welcome Section -->
-      <div class="welcome d-flex justify-content-center flex-column" id="pocetna">
+      <div class="welcome d-flex justify-content-center flex-column" id="pocetna" style="background-image: url('images/background.jpg');">
         <div class="container">
           <!-- Navigation -->
           <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
             <a class="navbar-brand mr-5" href="#">
-              <img src="images/app-promo/shards-logo-green.svg" class="mr-2" alt="Shards - Agency Landing Page">
-              Shards App
+              <img src="images/logo-green.svg" class="mr-2" alt="">
+              Техничка школа
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -32,40 +32,43 @@
                   <a class="nav-link" href="https://tehnickaskola.edu.rs">Почетна <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">О нама</a>
+                  <a class="nav-link" href="oNama">О нама</a>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://designrevision.com" id="navbarDropdownMenuLink-2" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-2" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   Смерови
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-2">
-                  <a class="dropdown-item" href="#">Електротехника</a>
-                  <a class="dropdown-item" href="#">Машинство и обрада метала</a>
-                  <a class="dropdown-item" href="#">Текстилство и кожарство</a>
+                  <a class="dropdown-item" href="obrazovni-profili/elektrotehnika">Електротехника</a>
+                  <a class="dropdown-item" href="obrazovni-profili/masinstvo-i-obrada-metala">Машинство и обрада метала</a>
+                  <a class="dropdown-item" href="obrazovni-profili/tekstilstvo-i-kozarstvo">Текстилство и кожарство</a>
                 </div>
               </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonials</a>
+                  <a href="files/organizacija-rada.pdf" class="nav-link" target="_blank">Организација рада</a></li>
+                </li>
+				<li class="nav-item">
+                  <a href="pravilnici" class="nav-link" target="_blank">Правилници</a></li>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link"  href="https://beta.tehnickaskola.edu.rs">Јавне набавке</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link"  href="kontakt">Контакт</a>
                 </li>
               </ul>
 
               <!-- Social Icons -->
               <ul class="header-social-icons navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="https://twitter.com/DesignRevision"><i class="fa fa-twitter"></i></a>
+                  <a class="nav-link" href="https://www.instagram.com/explore/locations/1212875342078578/tehnicka-skola-mladenovac/" target="_blank"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/designrevision"><i class="fa fa-facebook"></i></a>
+                  <a class="nav-link" href="https://www.facebook.com/mladenovac.tehnicka.skola/" target="_blank"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://dribbble.com/hisk"><i class="fa fa-dribbble"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/designrevision"><i class="fa fa-github"></i></a>
+                  <a class="nav-link" href="https://github.com/DanijelXDA/" target="_blank"><i class="fa fa-github"></i></a>
                 </li>
               </ul>
             </div>
@@ -77,7 +80,7 @@
         <div class="inner-wrapper mt-auto mb-auto container">
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 mt-auto mb-auto mr-3">
-                <h1 class="welcome-heading display-4 text-white">Добродошли</h1>
+                <h3 class="welcome-heading display-4 text-white">Добродошли</h3>
                 <p>
 							<p style="color: #fff;">
 							У нашој земљи живи <strong>800 000</strong> неписмених и оних који имају тек неколико разреда основне школе, а само <strong>6,5%</strong> је факултетски образованих. Ти си та(ј) који то може да промени и учини свет бољим местом за живот.<br />
@@ -90,7 +93,7 @@
             </div>
 
             <div class="col-lg-4 col-md-5 col-sm-12 ml-auto">
-              <img class="iphone-mockup ml-auto" src="images/app-promo/iphone-app-mockup.png" alt="iPhone App Mockup - Shards App Promo Demo">
+              <img class="iphone-mockup ml-auto" src="images/main.jpg" alt="">
             </div>
           </div>
         </div>
@@ -209,9 +212,9 @@
       <div class="subscribe section bg-dark py-4" style="border-bottom: none;">
         <h3 class="section-title text-center text-white m-5">Newsletter</h3>
         <p class="text-muted col-md-6 text-center mx-auto">Желиш да будеш у току? Пријави се на наш Newsletter.</p>
-        <form class="form-inline d-table mb-5 mx-auto" action="/">
+        <form class="form-inline d-table mb-5 mx-auto" method="post" action="store.php">
           <div class="form-group">
-            <input class="form-control border-0 mr-3 mb-2 mr-sm-0" type="text" placeholder="Твоја е-адреса">
+            <input class="form-control border-0 mr-3 mb-2 mr-sm-0" type="email" name="email" id="email" class="form-control" placeholder="Твоја е-адреса" required="true">
             <button class="btn btn-success mb-2" type="submit">Пријави се</button>
           </div>
         </form>
@@ -232,17 +235,23 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="https://tehnickaskola.edu.rs">Почетна<span class="sr-only">(current)</span></a>
                 </li>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-2">
+                  <a class="dropdown-item" href="obrazovni-profili/elektrotehnika">Електротехника</a>
+                  <a class="dropdown-item" href="obrazovni-profili/masinstvo-i-obrada-metala">Машинство и обрада метала</a>
+                  <a class="dropdown-item" href="obrazovni-profili/tekstilstvo-i-kozarstvo">Текстилство и кожарство</a>
+                </div>
+              </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Our Services</a>
+                  <a href="files/organizacija-rada.pdf" class="nav-link" target="_blank">Организација рада</a></li>
+                </li>
+				<li class="nav-item">
+                  <a href="pravilnici" class="nav-link" target="_blank">Правилници</a></li>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link"  href="https://beta.tehnickaskola.edu.rs">Јавне набавке</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+				<li class="nav-item">
+                  <a class="nav-link"  href="kontakt">Контакт</a>
                 </li>
               </ul>
             </div>
