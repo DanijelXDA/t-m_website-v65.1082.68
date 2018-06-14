@@ -13,21 +13,18 @@
   <link rel="stylesheet" href="css/shards-demo.min.css?v=2.0.1">
 </head>
 
-<body oncontextmenu="return false"> <!-- Disable right click on page -->
+<body oncontextmenu="return false" onselectstart="return false;" unselectable="on"> <!-- Disable right click on page -->
   <div class="loader">
     <div class="page-loader"></div>
   </div>
 
-  
-  <!-- Floating Logo -->
-  <img src="images/tsm.png" alt="Future" class="shard">
 		  
   <!-- Login Section -->
-  <div class="welcome d-flex justify-content-center flex-column" style="background-image: url('images/shapeBg.png');">
+  <div class="welcome d-flex justify-content-center flex-column" style="background-color: #343a40; background-image: url('images/shapeBg.png');">
     <div class="inner-wrapper mt-auto mb-auto">
 	
-      <h2 class="slide-in" style="margin-top: 17%;">  Пријави се</h2>
-      <p class="slide-in">За приступ заштићеном делу сајта потребно је унети валидне податке за логовање.</p>
+      <h2 class="slide-in" style="margin-top: 10%; color: white;">  Пријави се</h2>
+      <p class="slide-in" style="color: white;">За приступ заштићеном делу сајта потребно је унети валидне податке за логовање.</p>
 				  <!-- Danger Dismissible Alert -->
 				  <div id="myDIV" style="display: none; margin-left: 26%; margin-right: 26%; align: center;" class="alert alert-danger alert-dismissible fade show" role="alert">
 					<i class="fa fa-exclamation-circle"></i>
@@ -70,12 +67,6 @@
 			  </center>
             </div>
           </div>
-    <div class="product-by">
-      <a href="https://github.com/DanijelXDA" target="_blank">
-        <p>Дизајнирано од стране</p>
-        <img src="images/copy.jpg" alt="Copyright C 2018" width="120px" height="70px">
-      </a>
-    </div>
   </div>
 
   <!-- JavaScript -->

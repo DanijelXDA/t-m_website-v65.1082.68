@@ -116,50 +116,6 @@
   max-width: 180px;
 }
 
-.welcome:before, .welcome:after {
-  content: '';
-  position: absolute;
-  width: 50vw;
-  height: 80vh;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  z-index: 1;
-}
-
-.welcome:before {
-  left: -15vw;
-  top: -30%;
-  background: #fff;
-  background: linear-gradient(to right, #e2e7ef 0%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e7ef', endColorstr='#ffffff', GradientType=1);
-}
-
-@media (max-width: 991.98px) {
-  .welcome:before {
-    left: -30%;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .welcome:before {
-    left: -35%;
-  }
-}
-
-.welcome:after {
-  right: -5vw;
-  top: -15%;
-  background: #ffffff;
-  background: linear-gradient(to right, #ffffff 0%, #e2e7ef 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e7ef', GradientType=1);
-}
-
-@media (max-width: 991.98px) {
-  .welcome:after {
-    right: -17%;
-  }
-}
-
 .shard {
   will-change: transform;
   position: absolute;
