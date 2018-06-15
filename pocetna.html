@@ -12,9 +12,19 @@
         <link href="bootstrap/main//font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/shards.min.css?version=2.0.1">
         <link rel="stylesheet" href="css/shards-extras.min.css?version=2.0.1">
+		
+		<style>
+		
+		@media screen and (max-width: 600px) { <!-- Fix for mobile phones -->
+    #obj1, #obj2 {
+        display: none;
+    }
+}
+</style>
+
     </head>
 	
-    <body class="shards-app-promo-page--1">
+    <body class="shards-app-promo-page--1" oncontextmenu="return false" onselectstart="return false;" unselectable="on">
       <!-- Welcome Section -->
       <div class="welcome d-flex justify-content-center flex-column" id="pocetna" style="background-image: url('images/background.jpg');">
         <div class="container">
@@ -35,16 +45,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="oNama">О нама</a>
                 </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-2" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item">
+                <a href="#op" class="nav-link" aria-haspopup="true" aria-expanded="false">
                   Смерови
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-2">
-                  <a class="dropdown-item" href="obrazovni-profili/elektrotehnika">Електротехника</a>
-                  <a class="dropdown-item" href="obrazovni-profili/masinstvo-i-obrada-metala">Машинство и обрада метала</a>
-                  <a class="dropdown-item" href="obrazovni-profili/tekstilstvo-i-kozarstvo">Текстилство и кожарство</a>
-                </div>
               </li>
                 <li class="nav-item">
                   <a href="files/organizacija-rada.pdf" class="nav-link" target="_blank">Организација рада</a></li>
@@ -87,24 +91,24 @@
 							<p style="color: #fff;">
 							У нашој земљи живи <strong>800 000</strong> неписмених и оних који имају тек неколико разреда основне школе, а само <strong>6,5%</strong> је факултетски образованих. Ти си та(ј) који то може да промени и учини свет бољим местом за живот.<br />
 							Најтраженија занимање садашњости и будућности и у свету и код нас су занимања <br /><strong>програмера, инжењера и ИТ стручњака</strong>.<br /><br />
-							Ми постојимо да олакшамо твоју припрему за студентске дане. Код нас можете стећи знања из области програмирања и математике, као и мноогих других области, а све у циљу припреме за будуће студије електротехнике, информатике и математике... 
+							Ми постојимо да олакшамо твоју припрему за студентске дане. Код нас можете стећи знања из области програмирања и математике, као и многих других области, а све у циљу припреме за будуће студије електротехнике, информатике и математике... 
 							<br />Можемо ти помоћи и да брже и лакше савладаш градиво на факултету.<br />
 							</p>
 				</p>
-                <a href="#upis" class="btn btn-lg btn-success btn-pill align-self-center"><i class="fa fa-500px mr-2"></i>Упиши се</a>
+                <a href="upis-u-srednju-skolu" class="btn btn-lg btn-success btn-pill align-self-center"><i class="fa fa-500px mr-2"></i>Упиши се</a>
             </div>
           </div>
 		  </center>
-        </div>
+        </div>  <br />
         <!-- / Inner Wrapper -->
       </div>
       <!-- / Welcome Section -->
 
       <!-- Features Section -->
-      <div id="app-features" class="app-features section">
+      <div id="op" class="app-features section">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12 px-0 py-5" style="background-image: url('images/iShape.png');">
+            <div class="col-lg-4 col-md-12 col-sm-12 px-0 py-5" style="background-image: url('images/iShape.png');" id="obj1">
             </div>
 
             <!-- Upis Wrapper -->
@@ -116,13 +120,13 @@
                   <div>
                       <h5>Електротехника</h5>
                       <p> 
-						<a href="obrazovni-profili/elektrotehnika" style="text-decoration: none; color: #5a6169;">Електротехничар информационих технологија </a>
+						<a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#it">Електротехничар информационих технологија </a>
                         <br>
-                        <a href="obrazovni-profili/elektrotehnika" style="text-decoration: none; color: #5a6169;">Електротехничар мултимедије </a>
+                        <a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#mm">Електротехничар мултимедије </a>
                         <br>
-                        <a href="obrazovni-profili/elektrotehnika" style="text-decoration: none; color: #5a6169;">Електротехничар енергетике </a>
+                        <a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#ee">Електротехничар енергетике </a>
                         <br>
-                        <a href="obrazovni-profili/elektrotehnika" style="text-decoration: none; color: #5a6169;">Аутоелектричар </a>
+                        <a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#ae">Аутоелектричар </a>
 					  </p>
                   </div>
                 </div>
@@ -132,11 +136,11 @@
                   <div>
                       <h5>Машинство и обрада метала</h5>
                       <p>
-						<a href="obrazovni-profili/masinstvo-i-obrada-metala" style="text-decoration: none; color: #5a6169;">Аутомеханичар</a>
+						<a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#am">Аутомеханичар</a>
                             <br>
-                            <a href="obrazovni-profili/masinstvo-i-obrada-metala" style="text-decoration: none; color: #5a6169;">Механичар грејне и расхладне технике</a>
+                            <a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#mgr">Механичар грејне и расхладне технике</a>
                             <br>
-                            <a href="obrazovni-profili/masinstvo-i-obrada-metala" style="text-decoration: none; color: #5a6169;">Машински техничар моторних возила</a>
+                            <a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#mtm">Машински техничар моторних возила</a>
                             <br>
 					  </p>
                   </div>
@@ -147,7 +151,7 @@
                   <div>
                       <h5>Текстилство и кожарство</h5>
                       <p>
-					   <a href="obrazovni-profili/tekstilstvo-i-kozarstvo" style="text-decoration: none; color: #5a6169;">Модни кројач</a>
+					   <a href="#" style="text-decoration: none; color: #5a6169;" data-toggle="modal" data-target="#mo">Модни кројач</a>
                         <br>
 					  </p>
                   </div>
@@ -155,11 +159,249 @@
 
               </div>
             </div>
+			<!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="it" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Електротехничар информационих технологија</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				 <img data-animation="animated fadeIn" src="obrazovni-profili/2.jpg" alt="" / width="100%"> <br /> <br>
+                  Електротехничар информационих технологија је образовни профил усмерен ка оспособљавању ученика за израду софтверских апликација, креирању и развијању база података, статичких и динамичких веб презентација и одржавању и провери сигурности информационих система.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="mm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Електротехничар мултимедије</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/3.jpeg" alt="" / width="100%"> <br /> <br />
+                  Данас пуно можеш чути о медијима.
+                            <br>
+                            <br>Вероватно претпостављаш да медији користе сва расположива средства и начине да би информације као и своје ставове и мисли пренели људима.
+                            <br>Наравно мултимедијална средства користе и други људи, на пример професори у школама и на факултетима, фирме за презентацију својих производа итд.
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="ee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Електротехничар енергетике</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/8.jpg" alt="" / width="100%"> <br /> <br>
+                  У оквиру овог образовног профила бавимо се проучавањем производње, преноса и употребе електричне енергије.
+                            <br> За електричну енергију кажемо да је племенита. Лако се транспортује, може да се употребљава свуда и не загађује човекову средину.
+                            <br>
+                            <br> Због тога ко сада изабере овај образовни профил највероватније неће погрешити.
+
+                </div>
+                <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="ae" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Аутоелектричар</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/6.jpg" alt="" / width="100%"> <br /> <br>
+                 Аутоелектричари одржавају електричне и електроничке уређаје и инсталације у аутомобилу. Дијагностикују квар на електроничкој опреми аутомобила и отклањају га.
+                            <br>
+                            <br> Будући да модерни аутомобили имају све више електронички регулираних функција, примена основних знања електротехнике и електронике на електричне и електроничке уређаје у аутомобилу кључна је у овом занимању.
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="am" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Аутомеханичар</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/5.jpg" alt="" / width="100%"> <br /> <br>
+                  Задатак аутомеханичара је да обавља текуће одржавање и поправку возила, утврђује квар провером и прегледом целог возила, проверава функционисање поправљеног дела, итд. Имати доброг и сталног аутомеханичара је основ квалитетног свакодневног живота за сваког човека који је у ситуацији да зависи од свог возила.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="mgr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Машински техничар моторних возила</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/4.jpg" alt="" / width="100%"> <br /> <br>
+                  Ово је образовни профил омогућава стицање теоријског и практичног знања о моторима, моторним возилима, опреми...
+                            <br> Током четворогодишњег школовања ученици се оспособљавају за:&nbsp;</span>
+                            <br /><span>&ndash; дијагностику исправности мотора и моторних возила</span>
+                            <br /><span>&ndash; вођење поправке и сервисирање возила у сервису</span>
+                            <br /><span>&ndash; поступке поправке</span>
+                            <br /><span>&ndash; вођење техничког прегледа&nbsp;</span>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="mtm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Механичар грејне и расхладне технике</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/1.jpg" alt="" / width="100%"> <br /> <br>
+                  Инсталира, контролише, одржава и поправља грејне, рашладне и уређаје за климатизацију.
+                            <br>При инсталирању система за грејање користи се нацрт по коме поставља радијаторе, цеви, пумпу, котао,&hellip;
+								<br> При монтирању рашладних и уређаја за климатизацију следи упутства произвођача о начину монтирања опреме и повезивање са изворима електричне енергије.
+                            <br>Након инсталирања проверава се рад целог систем.
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+
+		
+			  <!-- Smerovi modals -->
+	          <div class="mb-5">
+
+          <!-- Modal Body -->
+          <div class="modal fade" id="mo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Модни кројач</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+				<img data-animation="animated fadeIn" src="obrazovni-profili/7.jpg" alt="" / width="100%"> <br /> <br>
+                   <ul>
+                            <li>Кроји текстилни материјал по задатом шаблону,</li>
+                            <li>Шије предмете од текстила на обичним и специјалним машинама за шивење,</li>
+                            <li>Дорађује израђене производе &#8211; пегла у току процеса израде и пегла готове производе,</li>
+                            <li>Контролише квалитет у току и на крају процеса производње и пакује готове производе,</li>
+                            <li>Стручно и прецизно шије одевне предмете.</li>
+                        </ul>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+          </div>
+		  
+        </div>
+		
       </div>
       <!-- / Features Section -->
-
+	  
+	  
       <!-- Our Blog Section -->
       <div class="blog section section-invert py-4" style="background-image: url('images/shapeBg.png');">
         <h3 class="section-title text-center m-5">Најновије објаве</h3>
@@ -169,7 +411,7 @@
               <div class="card-deck">
                 <div class="col-md-12 col-lg-4">
                   <div class="card mb-4">
-                    <img class="card-img-top" src="images/common/card-1.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/v1.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h4 class="card-title">Find Great Places to Work While Travelling</h4>
                       <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -180,7 +422,7 @@
 
                 <div class="col-md-12 col-lg-4">
                   <div class="card mb-4">
-                    <img class="card-img-top" src="images/common/card-3.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/v2.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h4 class="card-title">Quick Tips for Improving Your Website's Design</h4>
                       <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -191,7 +433,7 @@
 
                 <div class="col-md-12 col-lg-4">
                   <div class="card mb-4">
-                    <img class="card-img-top" src="images/common/card-2.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/v3.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h4 class="card-title">A Designer's Tips While Travelling and Working</h4>
                       <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -218,11 +460,12 @@
         </form>
       </div>
       <!-- / Subscribe Section -->
+	  
 
      
       <!-- Footer Section -->
       <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="obj2">
           <div class="container">
             <a class="navbar-brand" href="https://github.com/DanijelXDA"><small>&copy 2018 Техничка школа Младеновац</small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -257,10 +500,13 @@
         </nav>
       </footer>
       <!-- / Footer Section -->
-
+	  
+	  
+		
       <!-- JavaScript Dependencies -->
       <script src="bootstrap/main/jquery-3.2.1.min.js"></script>
       <script src="bootstrap/main/popper.min.js"></script>
       <script src="bootstrap/main/bootstrap.min.js"></script>
     </body>
+	
 </html>
