@@ -15,8 +15,9 @@
 		
 		<style>
 		
-		@media screen and (max-width: 600px) { <!-- Fix for mobile phones -->
-    #obj1, #obj2 {
+	@media (max-width: 500px) <!--Need  FULL Fix for mobile phones -->
+{ 
+    #obj1{
         display: none;
     }
 }
@@ -507,6 +508,14 @@
       <script src="bootstrap/main/jquery-3.2.1.min.js"></script>
       <script src="bootstrap/main/popper.min.js"></script>
       <script src="bootstrap/main/bootstrap.min.js"></script>
+	  <script>
+	  $(window).resize(function(){
+        if(window.innerWidth < 500) {
+            $("#obj1").removeAttr("style");
+        }
+});
+</script>
+
     </body>
 	
 </html>
