@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600|Roboto+Mono);
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&subset=cyrillic,cyrillic-ext');
 :root {
 	--blue: #007bff;
 	--indigo: #674eec;
@@ -497,8 +497,8 @@ pre {
 
 .btn-info:hover {
 	color: #fff;
-	background-color: #00a2bf;
-	border-color: #00a2bf;
+	background-color: #17c671;
+	border-color: #17c671;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(0, 184, 216, .25)
 }
 
@@ -519,7 +519,7 @@ pre {
 .btn-info:not(:disabled):not(.disabled):active,
 .show>.btn-info.dropdown-toggle {
 	color: #fff;
-	background-color: #00a2bf;
+	background-color: #17c671;
 	border-color: #008da5;
 	background-image: none;
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)!important
