@@ -39,6 +39,16 @@
 			font-size: 17px;
 		}
 		
+		.back-to-top { <!-- Back to the top CSS code -->
+			cursor: pointer;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display:none;
+			background-color: #28a745;
+			border-color: #28a745;
+		}			
+		
 		</style>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120962458-1"></script>
@@ -53,7 +63,7 @@
 </head>
 
 <body class="shards-app-promo-page--1" oncontextmenu="return false" onselectstart="return false;" unselectable="on">
-
+	
 	<!-- Welcome Section -->
 	<div class="welcome d-flex justify-content-center flex-column" id="pocetna" style="background-image: url('images/shapeBg.png');">
 		<div class="container">
@@ -642,7 +652,7 @@
 	</footer>
 	<!-- / Footer Section -->
 
-
+<a id="back-to-top" href="#" class="btn btn-success back-to-top" role="button" title="Врх стране" data-toggle="tooltip" data-placement="left"><span class="fa fa-angle-up"></span></a>
 
 	<!-- JavaScript Dependencies -->
 	<script src="bootstrap/main/jquery-3.2.1.min.js"></script>
@@ -650,6 +660,27 @@
 	<script src="bootstrap/main/bootstrap.min.js"></script>
 	<!-- Smoot scrolling -->
     <script src="js/smoothscroll.js"></script>
+	<!-- Back to the top of page -->
+	<script>
+		$(document).ready(function(){
+		 $(window).scroll(function () {
+				if ($(this).scrollTop() > 50) {
+					$('#back-to-top').fadeIn();
+				} else {
+					$('#back-to-top').fadeOut();
+				}
+			});
+			// scroll body to 0px on click
+			$('#back-to-top').click(function () {
+				$('#back-to-top').tooltip('hide');
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+
+	});
+	</script>
 
 </body>
 
