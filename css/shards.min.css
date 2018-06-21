@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
 :root {
 	--blue: #007bff;
 	--indigo: #674eec;
@@ -32,7 +32,8 @@
 
 @media (max-width:575.98px) {
 	html {
-		font-size: 15px
+		font-size: 15px;
+		font-family: 'Concert One', cursive;
 	}
 	
 	 #obj1{ /* Fix for mobile view */
@@ -41,6 +42,7 @@
 }
 
 body {
+	font-family: 'Concert One', cursive;
 	font-size: 1rem;
 	font-weight: 300;
 	color: #5a6169;
@@ -95,7 +97,7 @@ h4,
 h5,
 h6 {
 	margin-bottom: .75rem;
-	font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Concert One', cursive;
 	font-weight: 400;
 	color: #212529
 }
@@ -221,7 +223,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+	font-family: 'Concert One', cursive;
 }
 
 code {
@@ -349,7 +351,7 @@ pre {
 
 .btn {
 	font-weight: 300;
-	font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Concert One', cursive;
 	border: 1px solid transparent;
 	padding: .75rem 1.25rem;
 	font-size: .875rem;
@@ -1583,7 +1585,7 @@ i.material-icons {
 
 .nav {
 	font-size: .875rem;
-	font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+	font-family: 'Concert One', cursive;
 }
 
 .nav-link {
@@ -1745,7 +1747,7 @@ i.material-icons {
 	padding-bottom: .625rem;
 	margin-right: 1.5rem;
 	font-size: 1rem;
-	font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Concert One', cursive;
 	font-weight: 400
 }
 
@@ -1959,7 +1961,7 @@ i.material-icons {
 }
 
 .card-link {
-	font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+	font-family: 'Concert One', cursive;
 }
 
 .card-link+.card-link {
