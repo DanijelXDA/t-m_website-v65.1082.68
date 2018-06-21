@@ -7,7 +7,7 @@
 	--red: #c4183c;
 	--orange: #fb7906;
 	--yellow: #ffb400;
-	--green: #17c671;
+	--green: #124191;
 	--teal: #1adba2;
 	--cyan: #00b8d8;
 	--white: #fff;
@@ -15,7 +15,7 @@
 	--gray-dark: #343a40;
 	--primary: #007bff;
 	--secondary: #5A6169;
-	--success: #17c671;
+	--success: #124191;
 	--info: #00b8d8;
 	--warning: #ffb400;
 	--danger: #c4183c;
@@ -34,22 +34,27 @@
 	html {
 		font-size: 15px
 	}
+	
+	 #obj1{ /* Fix for mobile view */
+		display: none;
+	}
 }
 
 body {
 	font-size: 1rem;
 	font-weight: 300;
 	color: #5a6169;
-	background-color: #fff
+	background-color: #fff;
+	fill: #124191;
 }
 
 a {
-	color: #007bff;
+	color: #fff;
 	text-decoration: none
 }
 
 a:hover {
-	color: #0056b3;
+	color: #fff;
 	text-decoration: underline
 }
 
@@ -66,6 +71,7 @@ h5,
 h6 {
 	margin-top: 0;
 	margin-bottom: .5rem
+	color: #fff;
 }
 
 .h1,
@@ -323,7 +329,7 @@ pre {
 
 .custom-toggle .custom-control-input.is-valid~.custom-control-label::before,
 .was-validated .custom-toggle .custom-control-input:valid~.custom-control-label::before {
-	background-color: #17c671
+	background-color: #124191
 }
 
 .custom-toggle .custom-control-input.is-invalid~.custom-control-label::after,
@@ -451,36 +457,39 @@ pre {
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)!important
 }
 
-.btn-success {
+.bg-blue-btn {
 	color: #fff;
-	border-color: #17c671;
-	background-color: #17c671;
+	border-color: #124191;
+	background-color: #124191;
 	box-shadow: none
 }
 
-.btn-success:hover {
+.bg-blue-btn:hover {
 	color: #fff;
 	background-color: #14af64;
 	border-color: #14af64;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(23, 198, 113, .25)
 }
 
-.btn-success.focus,
-.btn-success:focus {
+.bg-blue-btn.focus,
+.bg-blue-btn:focus {
 	box-shadow: 0 0 0 3px rgba(23, 198, 113, .15), 0 3px 15px rgba(23, 198, 113, .2), 0 2px 5px rgba(0, 0, 0, .1)
 }
 
-.btn-success.disabled,
-.btn-success:disabled {
-	background-color: #17c671;
-	border-color: #17c671;
+.bg-blue-btn {background-color:#124191;}a.bg-blue-btn:focus,a.bg-blue-btn:hover{background-color:#0d3872; border-color: #124191;}
+
+
+.bg-blue-btn.disabled,
+.bg-blue-btn:disabled {
+	background-color: #124191;
+	border-color: #124191;
 	box-shadow: none;
 	cursor: not-allowed
 }
 
-.btn-success:not(:disabled):not(.disabled).active,
-.btn-success:not(:disabled):not(.disabled):active,
-.show>.btn-success.dropdown-toggle {
+.bg-blue-btn:not(:disabled):not(.disabled).active,
+.bg-blue-btn:not(:disabled):not(.disabled):active,
+.show>.bg-blue-btn.dropdown-toggle {
 	color: #fff;
 	background-color: #14af64;
 	border-color: #129857;
@@ -497,8 +506,8 @@ pre {
 
 .btn-info:hover {
 	color: #fff;
-	background-color: #17c671;
-	border-color: #17c671;
+	background-color: #124191;
+	border-color: #124191;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(0, 184, 216, .25)
 }
 
@@ -519,7 +528,7 @@ pre {
 .btn-info:not(:disabled):not(.disabled):active,
 .show>.btn-info.dropdown-toggle {
 	color: #fff;
-	background-color: #17c671;
+	background-color: #124191;
 	border-color: #008da5;
 	background-image: none;
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)!important
@@ -830,14 +839,14 @@ pre {
 .btn-outline-success {
 	background-color: transparent;
 	background-image: none;
-	border-color: #17c671;
-	color: #17c671
+	border-color: #124191;
+	color: #124191
 }
 
 .btn-outline-success:hover {
 	color: #fff;
-	background-color: #17c671;
-	border-color: #17c671;
+	background-color: #124191;
+	border-color: #124191;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(23, 198, 113, .25)
 }
 
@@ -848,7 +857,7 @@ pre {
 
 .btn-outline-success.disabled,
 .btn-outline-success:disabled {
-	color: #17c671;
+	color: #124191;
 	background-color: transparent;
 	box-shadow: none
 }
@@ -857,8 +866,8 @@ pre {
 .btn-outline-success:not(:disabled):not(.disabled):active,
 .show>.btn-outline-success.dropdown-toggle {
 	color: #fff;
-	background-color: #17c671;
-	border-color: #17c671
+	background-color: #124191;
+	border-color: #124191
 }
 
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
