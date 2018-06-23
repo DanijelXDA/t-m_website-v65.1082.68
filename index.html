@@ -23,7 +23,47 @@
 		<link rel="shortcut icon" href="images/tsm-favicon.png">
 
 		<style>
+		
+		<!-- Custom Scroll Bar -->
+		
+	    .scrollbar
+		{
+			margin-left: 30px;
+			float: left;
+			height: 300px;
+			width: 65px;
+			background: #F5F5F5;
+			overflow-y: scroll;
+			margin-bottom: 25px;
+		}
 
+		.force-overflow
+		{
+			min-height: 450px;
+		}
+
+		::-webkit-scrollbar-track
+		{
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			border-radius: 10px;
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar
+		{
+			width: 8px;
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+			background-color: #555;
+		}
+
+
+		
 		.back-to-top { <!-- Back to the top CSS code -->
 			cursor: pointer;
 			position: fixed;
@@ -48,7 +88,7 @@
 </head>
 
 <body class="shards-app-promo-page--1" oncontextmenu="return false" onselectstart="return false;" unselectable="on">
-	
+
 	<!-- Welcome Section -->
 	<div class="welcome d-flex justify-content-center flex-column" id="pocetna" style="background-image: url('images/shapeBg.png');">
 		<div class="container">
