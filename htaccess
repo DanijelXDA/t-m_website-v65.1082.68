@@ -1,0 +1,21 @@
+
+RewriteOptions inherit
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^tehnickaskola\.edu\.rs$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tehnickaskola\.edu\.rs$
+RewriteRule ^rs\/$ "https\:\/\/tehnickaskola\.edu\.rs\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^tehnickaskola\.edu\.rs$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tehnickaskola\.edu\.rs$
+RewriteRule ^oNama\.html\/$ "https\:\/\/tehnickaskola\.edu\.rs\/oNama" [R=301,L]
+RewriteCond %{HTTP_HOST} ^tehnickaskola\.edu\.rs$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tehnickaskola\.edu\.rs$
+RewriteRule ^pravilnici\.html\/$ "https\:\/\/tehnickaskola\.edu\.rs\/pravilnici" [R=301,L]
+RewriteCond %{HTTP_HOST} ^tehnickaskola\.edu\.rs$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tehnickaskola\.edu\.rs$
+RewriteRule ^kontakt\.html\/$ "https\:\/\/tehnickaskola\.edu\.rs\/kontakt" [R=301,L]
+RewriteCond %{HTTP_HOST} ^tehnickaskola\.edu\.rs$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tehnickaskola\.edu\.rs$
+RewriteRule ^upis\-u\-srednju\-skolu\.html\/$ "https\:\/\/tehnickaskola\.edu\.rs\/upis\-u\-srednju\-skolu" [R=301,L]
+
