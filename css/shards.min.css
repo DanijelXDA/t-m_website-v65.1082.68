@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url('https://fonts.googleapis.com/css?family=Andika&subset=cyrillic,cyrillic-ext');
 :root {
 	--blue: #007bff;
 	--indigo: #674eec;
@@ -33,7 +33,7 @@
 @media (max-width:575.98px) {
 	html {
 		font-size: 15px;
-		font-family: 'Concert One', cursive;
+		font-family: 'Andika', sans-serif;
 	}
 	
 	 #obj1{ /* Fix for mobile view */
@@ -42,7 +42,7 @@
 }
 
 body {
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
 	color: #5a6169;
@@ -97,7 +97,7 @@ h4,
 h5,
 h6 {
 	margin-bottom: .75rem;
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 	font-weight: 400;
 	color: #212529
 }
@@ -223,7 +223,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 }
 
 code {
@@ -351,7 +351,7 @@ pre {
 
 .btn {
 	font-weight: 300;
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 	border: 1px solid transparent;
 	padding: .75rem 1.25rem;
 	font-size: .875rem;
@@ -1585,7 +1585,7 @@ i.material-icons {
 
 .nav {
 	font-size: .875rem;
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 }
 
 .nav-link {
@@ -1747,7 +1747,7 @@ i.material-icons {
 	padding-bottom: .625rem;
 	margin-right: 1.5rem;
 	font-size: 1rem;
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 	font-weight: 400
 }
 
@@ -1961,7 +1961,7 @@ i.material-icons {
 }
 
 .card-link {
-	font-family: 'Concert One', cursive;
+	font-family: 'Andika', sans-serif;
 }
 
 .card-link+.card-link {

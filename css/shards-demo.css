@@ -137,13 +137,13 @@
 
 .page-content .color .title {
 	display: inline-block;
-	font-family: 'Concert One', cursive;
+	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	font-size: 1rem;
 }
 
 .page-content .color .hex-value {
-	font-family: 'Concert One', cursive;
+	font-family: 'Montserrat', sans-serif;
 	color: #8f99ac;
 	font-size: 12px;
 	text-transform: uppercase;
