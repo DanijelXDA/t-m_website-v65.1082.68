@@ -7,6 +7,6 @@
 	$savestring = $email . "" . PHP_EOL;
 	fwrite($fp, $savestring);
 	fclose($fp);
-	header("Location: pocetna.html"); // redirect back to your main page
+	header("Location: index.html"); // redirect back to your main page
 	exit;
 ?>
