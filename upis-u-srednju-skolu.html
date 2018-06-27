@@ -27,9 +27,55 @@
 		</script>
 	<style>
 		
-		body, html {
-			font-size: 17px;
+		<!-- Custom Scroll Bar -->
+		
+	    .scrollbar
+		{
+			margin-left: 30px;
+			float: left;
+			height: 300px;
+			width: 65px;
+			background: #F5F5F5;
+			overflow-y: scroll;
+			margin-bottom: 25px;
 		}
+
+		.force-overflow
+		{
+			min-height: 450px;
+		}
+
+		::-webkit-scrollbar-track
+		{
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			border-radius: 10px;
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar
+		{
+			width: 8px;
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar-thumb
+		{
+			border-radius: 10px;
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+			background-color: #555;
+		}
+
+
+		
+		.back-to-top { <!-- Back to the top CSS code -->
+			cursor: pointer;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display:none;
+			background-color: #124191;
+			border-color: #124191;
+		}			
 		
 		</style>
 
@@ -180,6 +226,63 @@
 	</section>
 
 
+<!-- Политика приватности modals -->
+				<div class="mb-5">
+
+					<!-- Modal Body -->
+					<div class="modal fade" id="pp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Политика приватности</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+								</div>
+								<div class="modal-body">
+									<img class="img-fluid" alt="" src="https://www.gstatic.com/policies/privacy/e79ea0ed464fc8952d5b5582f9f9ae53.svg"/>
+									<br />
+
+									Информације које прикупљамо обухватају јединствене идентификаторе, тип и подешавања прегледача, тип и подешавања уређаја, оперативни систем, информације о мобилној мрежи укључујући назив мобилног оператера и број мобилног телефона, и број верзије апликације. Прикупљамо и информације о интеракцији ваших апликација, прегледача и уређаја са услугама, укључујући IP адресу, извештаје о отказивању, активности система, као и датум, време и URL упућивача за захтев.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn bg-blue-btn" data-dismiss="modal">Затвори</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+					
+				<!-- Политика приватности modals -->
+				<div class="mb-5">
+
+					<!-- Modal Body -->
+					<div class="modal fade" id="uk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Услови коришћења</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+								</div>
+								<div class="modal-body">
+									<img class="img-fluid" alt="" src="https://www.gstatic.com/policies/privacy/e79ea0ed464fc8952d5b5582f9f9ae53.svg"/>
+									<br />
+
+									Морате да поштујете све смернице које су вам доступне у оквиру Услуга.
+
+									Немојте да злоупотребљавате наше Услуге. На пример, немојте да ометате Услуге или да покушавате да им приступите користећи метод који се разликује од интерфејса и упутстава које ми пружамо. Услуге можете да користите само на начин који је дозвољен законом, укључујући важеће законе и прописе који се односе на контролу извоза и поновног извоза. Можемо да обуставимо или прекинемо да вам пружамо Услуге уколико се не придржавате наших услова или смерница, или уколико истражујемо случај могућег недозвољеног понашања.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn bg-blue-btn" data-dismiss="modal">Затвори</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
@@ -232,13 +335,35 @@
 			</div>
 		</div>
 	</footer>
-
+	<a id="back-to-top" href="#" class="btn bg-blue-btn back-to-top" role="button" title="Врх стране" data-toggle="tooltip" data-placement="left"><span class="fa fa-angle-up"></span></a>
+	
 	<!-- JavaScript Dependencies -->
 	<script src="bootstrap/main/jquery-3.2.1.min.js"></script>
 	<script src="bootstrap/main/popper.min.js"></script>
 	<script src="bootstrap/main/bootstrap.min.js"></script>
 	<!-- Smoot scrolling -->
     <script src="js/smoothscroll.js"></script>
+	<!-- Back to the top of page -->
+	<script>
+		$(document).ready(function(){
+		 $(window).scroll(function () {
+				if ($(this).scrollTop() > 50) {
+					$('#back-to-top').fadeIn();
+				} else {
+					$('#back-to-top').fadeOut();
+				}
+			});
+			// scroll body to 0px on click
+			$('#back-to-top').click(function () {
+				$('#back-to-top').tooltip('hide');
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+
+	});
+	</script>
 
 </body>
 
