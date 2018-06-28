@@ -263,6 +263,12 @@
 	}
 }
 
+@media (max-height:759px) { /* Fix stuck nav bar icons on tablets */
+			#i1, #i2, #i3, #i4, #i5, #i6, #i7 {
+		display: none;
+	}
+}
+
 body {
 	font-family: 'Andika', sans-serif;
 	font-size: 1rem;
