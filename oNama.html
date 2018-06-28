@@ -12,64 +12,12 @@
                   elektrotehničar multimedije, elektrotehničar energetike, smerovi, elektrotehnika, mašinstvo, obrazovanje,
                   obrazovni profili, bodovi za upis" name="keywords">
 
-		<!-- CSS Dependencies -->
+				  			<!-- CSS Dependencies -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/shards.min.css?version=2.0.1">
-		<link rel="stylesheet" href="css/shards-extras.min.css?version=2.0.1">
+		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="shortcut icon" href="images/tsm-favicon.png">
-		<!-- Custom Scroll Bar -->
-		<style>
-	    .scrollbar
-		{
-			margin-left: 30px;
-			float: left;
-			height: 300px;
-			width: 65px;
-			background: #F5F5F5;
-			overflow-y: scroll;
-			margin-bottom: 25px;
-		}
 
-		.force-overflow
-		{
-			min-height: 450px;
-		}
-
-		::-webkit-scrollbar-track
-		{
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-			border-radius: 10px;
-			background-color: #F5F5F5;
-		}
-
-		::-webkit-scrollbar
-		{
-			width: 8px;
-			background-color: #F5F5F5;
-		}
-
-		::-webkit-scrollbar-thumb
-		{
-			border-radius: 10px;
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-			background-color: #555;
-		}
-
-
-		
-		.back-to-top { <!-- Back to the top CSS code -->
-			cursor: pointer;
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			display:none;
-			background-color: #124191;
-			border-color: #124191;
-		}			
-		
-		</style>
-		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120962458-1"></script>
 		<script>
@@ -79,14 +27,15 @@
 
 		  gtag('config', 'UA-120962458-1');
 		</script>
+		
 </head>
 
 <body class="shards-landing-page--1" oncontextmenu="return false" onselectstart="return false;" unselectable="on">
 
 	<!-- Navigation menu -->
-		<nav class="navbar navbar-expand-lg navbar-dark pt-2 px-0 fixed-top nav-tabs" style="background-color: #ffff; border: 4px solid #555; border-radius: 15px;">
-				<a class="navbar-brand mr-5" href="https://tehnickaskola.edu.rs"">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" style="color: #055;"></i>
+		<nav class="navbar navbar-expand-lg navbar-dark pt-2 px-0 fixed-top nav-tabs" style="background-color: #ffff; box-shadow: 3px 6px 20px 2px;">
+				<a class="navbar-brand mr-5" href="https://tehnickaskola.edu.rs">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right" style="color: #055;"></i>
 					<i class="fa fa-chevron-right" style="color: #055;"></i>
 					<span class="text-dark">&nbsp;Техничка школа</span>
 				</a>
@@ -96,32 +45,33 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown" style="padding-left: 20px;">
 					<ul class="navbar-nav">&nbsp;&nbsp;&nbsp;&nbsp;
 						<li class="nav-item active">
-							<a class="nav-link text-dark" href="https://tehnickaskola.edu.rs"><i class="fa fa-home"></i>
+							<a class="nav-link text-dark" href="https://tehnickaskola.edu.rs"><i class="fa fa-home" id="i1"></i>
 							Почетна <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" href="oNama"><i class="fa fa-grav"></i>&nbsp;&nbsp;О&nbsp;нама</a>
+							<a class="nav-link text-dark" href="oNama"><i class="fab fa-grav" id="i2"></i>&nbsp;&nbsp;О&nbsp;нама</a>
 						</li>
 						<li class="nav-item">
-							<a href="https://tehnickaskola.edu.rs#op" class="nav-link text-dark" aria-haspopup="true" aria-expanded="false">
+							<a href="https://tehnickaskola.edu.rs/#op" class="nav-link text-dark" aria-haspopup="true" aria-expanded="false" id="i7">
                   <i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;Смерови
                 </a>
 						</li>
 						<li class="nav-item">
-							<a href="files/organizacija-rada.pdf" class="nav-link text-dark" target="_blank"><i class="fa fa-sitemap"></i>&nbsp;&nbsp;Организација&nbsp;рада</a>
+							<a href="files/organizacija-rada.pdf" class="nav-link text-dark" target="_blank"><i class="fa fa-sitemap" id="i3"></i>&nbsp;&nbsp;Организација&nbsp;рада</a>
 						</li>
 						<li class="nav-item">
-							<a href="pravilnici" class="nav-link text-dark"><i class="fa fa-book"></i>&nbsp;&nbsp;Правилници</a>
+							<a href="pravilnici" class="nav-link text-dark"><i class="fa fa-book" id="i4"></i>&nbsp;&nbsp;Правилници</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" href="https://beta.tehnickaskola.edu.rs"><i class="fa fa-ravelry"></i>&nbsp;&nbsp;Јавне&nbsp;набавке</a>
+							<a class="nav-link text-dark" href="https://beta.tehnickaskola.edu.rs"><i class="fab fa-ravelry" id="i5"></i>&nbsp;&nbsp;Јавне&nbsp;набавке</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" href="kontakt"><i class="fa fa-volume-control-phone"></i>&nbsp;&nbsp;Контакт</a>
+							<a class="nav-link text-dark" href="kontakt"><i class="fas fa-phone-volume" id="i6"></i>&nbsp;&nbsp;Контакт</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
+	
 	<!-- / Navigation -->
 
 
@@ -271,7 +221,7 @@
 	
 	
 					
-				<!-- Footer section -->
+<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
 			<div class="row spad">
@@ -284,17 +234,16 @@
 					<h5 class="widget-title" style="color: #20509e;">Ресурси</h5>
 						<a href="upis-u-srednju-skolu" style="color: #555;">Како се уписати?</a><br /><br />
 						<a href="https://tehnickaskola.edu.rs/Materijali/materijali#feautres" style="color: #555;">Онлајн приступ материјалима</a><br /><br />
-						<a href="https://tehnickaskola.edu.rs/#vesti" style="color: #555;">Најновије вести</a><br /><br />
+						<a href="https://tehnickaskola.edu.rs/#vesti" style="color: #555;">Најновије вести</a>
 				</div>
 				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
 						<h5 class="widget-title" style="color: #20509e;">Запрати&nbsp;нас</h5>
 					<div class="social">
-						<a href="https://www.facebook.com/mladenovac.tehnicka.skola/" class="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="https://github.com/DanijelXDA/" class="google"><i class="fa fa-github"></i></a>
-						<a href="https://www.instagram.com/explore/locations/1212875342078578/tehnicka-skola-mladenovac/" class="instagram"><i class="fa fa-instagram"></i></a><br /><br />
+						<a href="https://www.facebook.com/mladenovac.tehnicka.skola/" class="facebook"><i class="fab fa-facebook"></i></a>
+						<a href="https://github.com/DanijelXDA/" class="google"><i class="fab fa-github"></i></a>
+						<a href="https://www.instagram.com/explore/locations/1212875342078578/tehnicka-skola-mladenovac/" class="instagram"><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
-				<br /><br />
 				<div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
 							<h5 class="widget-title" style="color: #20509e;">Контакт&nbsp;</h5>
 					<p>Техничка&nbsp;школа&nbsp;Младеновац</p>
@@ -322,10 +271,10 @@
 		</div>
 	</footer>
 
+<a id="back-to-top" href="#" class="btn bg-blue-btn back-to-top" role="button" title="Врх стране" data-toggle="tooltip" data-placement="left"><span class="fas fa-angle-up"></span></a>
 
-<a id="back-to-top" href="#" class="btn bg-blue-btn back-to-top" role="button" title="Врх стране" data-toggle="tooltip" data-placement="left"><span class="fa fa-angle-up"></span></a>
 	<!-- JavaScript Dependencies -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<!-- Smoot scrolling -->
@@ -352,5 +301,6 @@
 	});
 	</script>
 
-		</body>
-		</html>
+</body>
+
+</html>
