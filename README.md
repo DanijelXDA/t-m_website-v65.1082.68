@@ -12,7 +12,8 @@ What's new in this release: <br />
         &emsp;- Migrate to full version of JQuery instead of slim version<br />
         &emsp;- Icons have got some colors<br />
         &emsp;- Main Page has got a lightweight design<br />
-       &emsp; - Code Optimisation<br />
+        &emsp; - Code Optimisation<br />
+        &emsp; - Removed Popper.js<br />
 
     ** For full changelog check commits ;)
 
