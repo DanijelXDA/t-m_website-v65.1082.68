@@ -1,14 +1,14 @@
 # TŠM WebSite Source code
 
-What's new in this release:
-    -> Release 529.67_rc45
-        - UI has been redesigned
-        - Updated Bootstrap to version 4.1.2 (latest)
-        - Scripts was updated
-        - Migrate to full version of JQuery instead of slim version
-        - Icons have got some colors
-        - Main Page has got a lightweight design
-        - Code Optimisation
+What's new in this release: <br />
+    -> Release 529.67_rc45<br /><br />
+        - UI has been redesigned<br />
+        - Updated Bootstrap to version 4.1.2 (latest)<br />
+        - Scripts was updated<br />
+        - Migrate to full version of JQuery instead of slim version<br />
+        - Icons have got some colors<br />
+        - Main Page has got a lightweight design<br />
+        - Code Optimisation<br />
 
     ** For full changelog check commits ;)
 
