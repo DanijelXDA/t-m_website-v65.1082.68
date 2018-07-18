@@ -2,7 +2,7 @@
 
 <br/>
 <center>
-
+<img src="https://tehnickaskola.edu.rs/rs/Capture">
 </center>
 What's new in this release: <br />
     -> Release 529.67_rc45<br />
