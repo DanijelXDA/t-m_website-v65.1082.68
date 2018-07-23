@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="Tehnička škola Mladenovac, pravilnici Tehničke škole, Pravilnici" name="keywords">
     <!-- CSS Dependencies -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Update Bootstrap to v4.1.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="images/tsm-favicon.png">
@@ -27,58 +28,24 @@
 </head>
 
 <body class="shards-app-promo-page--1" oncontextmenu="return false">
-    <!-- Navigation menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark pt-2 px-0 fixed-top nav-tabs" style="background-color: #fff; box-shadow: 3px 6px 20px 2px;">
-        <a class="navbar-brand mr-5" href="https://tehnickaskola.edu.rs"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<i class="fas fa-chevron-right" style="color: #055;"></i>
-						<i class="fa fa-chevron-right" style="color: #055;"></i>
-						<span class="text-dark">&nbsp;Техничка школа</span>
-					</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 50px;">
-            <i class="fa fa-bars fa-2x" style="color: #055; height: 40px;"></i>
-        </button>
+    <!-- New nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark pt-2 px-0 fixed-top nav-tabs" style="background-color: #fcf9f9;">
+        <a class="navbar-brand mr-5" href="https://tehnickaskola.edu.rs"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right" style="color: #1be91b;"></i> <i class="fa fa-chevron-right" style="color: rgb(255, 0, 0);"></i> <span class="text-dark">&nbsp;Техничка школа</span> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 50px;"> <i class="fa fa-bars fa-2x" style="color: #066ad4; height: 40px;"></i> </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown" style="padding-left: 20px;">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link text-dark" href="https://tehnickaskola.edu.rs">
-                        <i class="fa fa-home" id="i1"></i> Почетна
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
+                <li class="nav-item active"> <a class="nav-link text-dark" href="https://tehnickaskola.edu.rs"><i class="fa fa-home" id="i1" style="color: #149191;"></i> Почетна <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark" href="oNama"><i class="fab fa-grav" id="i2" style="color: #007bff;"></i>&nbsp;&nbsp;О&nbsp;нама</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="oNama">
-                        <i class="fab fa-grav" id="i2"></i>&nbsp;&nbsp;О&nbsp;нама
-                    </a>
+                    <a href="obrazovniProfili" class="nav-link text-dark" aria-haspopup="true" aria-expanded="false" id="i7"> <i class="fa fa-chevron-circle-right" style="color: rgb(189, 64, 15);"></i>&nbsp;&nbsp;Образовни&nbsp;профили</a>
                 </li>
-                <li class="nav-item">
-                    <a href="https://tehnickaskola.edu.rs/#op" class="nav-link text-dark" aria-haspopup="true" aria-expanded="false" id="i7">
-                        <i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;Смерови
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="files/organizacija-rada.pdf" class="nav-link text-dark" target="_blank">
-                        <i class="fa fa-sitemap" id="i3"></i>&nbsp;&nbsp;Организација&nbsp;рада
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="pravilnici" class="nav-link text-dark">
-                        <i class="fa fa-book" id="i4"></i>&nbsp;&nbsp;Правилници
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="https://beta.tehnickaskola.edu.rs">
-                        <i class="fab fa-ravelry" id="i5"></i>&nbsp;&nbsp;Јавне&nbsp;набавке
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="kontakt">
-                        <i class="fas fa-phone-volume" id="i6"></i>&nbsp;&nbsp;Контакт
-                    </a>
-                </li>
+                <li class="nav-item"> <a href="files/organizacija-rada.pdf" class="nav-link text-dark" target="_blank"><i class="fa fa-sitemap" id="i3" style="color: #066ad4;"></i>&nbsp;&nbsp;Организација&nbsp;рада</a> </li>
+                <li class="nav-item"> <a href="pravilnici" class="nav-link text-dark"><i class="fa fa-book" id="i4" style="color: rgb(61, 21, 204);"></i>&nbsp;&nbsp;Правилници</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark" href="https://beta.tehnickaskola.edu.rs"><i class="fab fa-ravelry" id="i5" style="color: rgb(9, 158, 158);"></i>&nbsp;&nbsp;Јавне&nbsp;набавке</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark" href="kontakt"><i class="fas fa-phone-volume" id="i6" style="color: rgb(230, 172, 48);"></i>&nbsp;&nbsp;Контакт</a> </li>
             </ul>
         </div>
     </nav>
-    <!-- / Navigation -->
     <!-- Features Section -->
     <div style="background: linear-gradient(#124191, #0eb7a3);">
         <!-- Not need style="background-image: url('images/shapeBg.png');" -->
@@ -94,8 +61,8 @@
                         </div>
                         <div>
                             <h5 style="text-decoration: none; color: #fff;">
-											<b>Правилници&nbsp;&nbsp;&nbsp;1 - 4</b>
-										</h5>
+                                <b>Правилници&nbsp;&nbsp;&nbsp;1 - 4</b>
+                            </h5>
                             <p>
                                 <br />
                                 <a href="files/pravilnici/pravilnik_1.pdf" style="text-decoration: none; color: #fff;">Правилник о мерама начину и поступку заштите и безбедности ученика за време боравка у школи и свих активности које организује школа</a>
@@ -148,8 +115,9 @@
                     </div>
                     <div class="modal-body">
                         <img class="img-fluid" alt="" src="https://www.gstatic.com/policies/privacy/e79ea0ed464fc8952d5b5582f9f9ae53.svg" />
-                        <br />Информације које прикупљамо обухватају јединствене идентификаторе, тип и подешавања прегледача, тип и подешавања уређаја, оперативни систем, информације о мобилној мрежи укључујући назив мобилног оператера и број мобилног телефона,
-                        и број верзије апликације. Прикупљамо и информације о интеракцији ваших апликација, прегледача и уређаја са услугама, укључујући IP адресу, извештаје о отказивању, активности система, као и датум, време и URL упућивача за захтев.
+                        <br />Информације које прикупљамо обухватају јединствене идентификаторе, тип и подешавања прегледача, тип и подешавања уређаја, оперативни систем, информације о мобилној мрежи укључујући назив мобилног оператера и број мобилног
+                        телефона, и број верзије апликације. Прикупљамо и информације о интеракцији ваших апликација, прегледача и уређаја са услугама, укључујући IP адресу, извештаје о отказивању, активности система, као и датум, време и URL упућивача
+                        за захтев.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn bg-blue-btn" data-dismiss="modal">Затвори</button>
@@ -172,9 +140,9 @@
                     </div>
                     <div class="modal-body">
                         <img class="img-fluid" alt="" src="https://www.gstatic.com/policies/privacy/e79ea0ed464fc8952d5b5582f9f9ae53.svg" />
-                        <br />Морате да поштујете све смернице које су вам доступне у оквиру Услуга. Немојте да злоупотребљавате наше Услуге. На пример, немојте да ометате Услуге или да покушавате да им приступите користећи метод који се разликује од интерфејса
-                        и упутстава које ми пружамо. Услуге можете да користите само на начин који је дозвољен законом, укључујући важеће законе и прописе који се односе на контролу извоза и поновног извоза. Можемо да обуставимо или прекинемо да вам пружамо
-                        Услуге уколико се не придржавате наших услова или смерница, или уколико истражујемо случај могућег недозвољеног понашања.
+                        <br />Морате да поштујете све смернице које су вам доступне у оквиру Услуга. Немојте да злоупотребљавате наше Услуге. На пример, немојте да ометате Услуге или да покушавате да им приступите користећи метод који се разликује од
+                        интерфејса и упутстава које ми пружамо. Услуге можете да користите само на начин који је дозвољен законом, укључујући важеће законе и прописе који се односе на контролу извоза и поновног извоза. Можемо да обуставимо или прекинемо
+                        да вам пружамо Услуге уколико се не придржавате наших услова или смерница, или уколико истражујемо случај могућег недозвољеног понашања.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn bg-blue-btn" data-dismiss="modal">Затвори</button>
@@ -255,33 +223,34 @@
     <a id="back-to-top" href="#" class="btn bg-blue-btn back-to-top" role="button" title="Врх стране" data-toggle="tooltip" data-placement="left">
         <span class="fas fa-angle-up"></span>
     </a>
-    <!-- JavaScript Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Update Bootstrap to v4.1.2 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!-- End Of Update Bootstrap to v4.1.2 -->
     <!-- Smoot scrolling -->
     <script src="js/smoothscroll.js"></script>
     <!-- Back to the top of page -->
-      <script>
-         $(document).ready(function(){
-          $(window).scroll(function () {
-        		if ($(this).scrollTop() > 50) {
-         			$('#back-to-top').fadeIn();
-         		} else {
-         			$('#back-to-top').fadeOut();
-         		}
-         	});
-         	// scroll body to 0px on click
-         	$('#back-to-top').click(function () {
-         		$('#back-to-top').tooltip('hide');
-         		$('body,html').animate({
-         			scrollTop: 0
-         		}, 800);
-         		return false;
-         	});
-         
-         });
-     </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function() {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+        });
+    </script>
 </body>
 
 </html>

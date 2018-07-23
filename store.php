@@ -7,6 +7,6 @@
 	$savestring = $email . "" . PHP_EOL;
 	fwrite($fp, $savestring);
 	fclose($fp);
-	header("Location: https://tehnickaskola.edu.rs/newsletter"); // redirect back to your main page
+	header("Location: https://tehnickaskola.edu.rs/newsletter.html"); // redirect back to your main page
 	exit;
 ?>
