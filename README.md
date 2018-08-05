@@ -5,10 +5,8 @@
 <img src="https://tehnickaskola.edu.rs/rs/Capture">
 </center>
 What's new in this release: <br />
-    -> Release 575.66_rc422<br />
-        &emsp;- Redesign Obrazovni Profili page<br />
-        &emsp;- Files reorganisation by folders<br />
-
+    -> Release 600<br />
+        &emsp;- Main Page -> Remove UMD Popper (again)<br />
 
     ** For full changelog check commits ;)
 
