@@ -5,15 +5,15 @@
 <img src="https://tehnickaskola.edu.rs/rs/Capture">
 </center>
 What's new in this release: <br />
-    -> Release 529.67_rc45<br />
+    -> Release version <br />
         &emsp;- UI has been redesigned<br />
-        &emsp;- Updated Bootstrap to version 4.1.2 (latest)<br />
+        &emsp;- Updated Bootstrap <br />
         &emsp;- Scripts was updated<br />
         &emsp;- Migrate to full version of JQuery instead of slim version<br />
         &emsp;- Icons have got some colors<br />
         &emsp;- Main Page has got a lightweight design<br />
         &emsp; - Code Optimisation<br />
-        &emsp; - Removed Popper.js<br />
+
 
     ** For full changelog check commits ;)
 
