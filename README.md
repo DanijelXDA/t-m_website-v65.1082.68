@@ -2,7 +2,7 @@
 
 <br/>
 <center>
-<img src="https://tehnickaskola.edu.rs/rs/Capture">
+<img src="https://tehnickaskola.edu.rs/rs/infinity.gif">
 </center>
 What's new in this release: <br />
     -> Version Infinity<br />
