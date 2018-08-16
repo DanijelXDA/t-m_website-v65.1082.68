@@ -2,12 +2,12 @@
 	$name = $_POST['ime'];
 	$email = $_POST['email'];
 	$message = $_POST['poruka'];
-	$formcontent="Име: $name \nПорука: $poruka";
+	$formcontent="Име: $name \nE-адреса: $email\nПорука: $poruka\n";
 	$recipient = "danijelj2001.xda@gmail.com";
 	$subject = "Питање/Сугестија | Техничка школа";
-	mail($recipient, $subject, $formcontent, $headers) or die("Greška!");
 	$headers = 'From: no-reply@tehnickaskola.edu.rs' . "\r\n" .
 		'Reply-To: no-reply@tehnickaskola.edu.rs' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-	echo "Vaš mejl je poslat!";
+	mail($recipient, $subject, $formcontent, $headers) or die("Greska!");
+	echo "Vas mejl je poslat!";
 ?>
