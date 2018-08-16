@@ -189,7 +189,7 @@
       </div>
     </section>
     <section class="section section-lg pt-lg-0 section-contact-us">
-      <div class="container">
+      <form class="container" method="post" action="sendMail.php">
         <div class="row justify-content-center mt--300">
           <div class="col-lg-8">
             <div class="card bg-gradient-secondary shadow">
@@ -201,7 +201,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-user-run"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Твоје име" type="text">
+                    <input class="form-control" placeholder="Твоје име" type="text" id="ime">
                   </div>
                 </div>
                 <div class="form-group">
@@ -209,11 +209,11 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Е-адреса" type="email">
+                    <input class="form-control" placeholder="Е-адреса" type="email" id="email">
                   </div>
                 </div>
                 <div class="form-group mb-4">
-                  <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Напиши нам поруку..."></textarea>
+                  <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Напиши нам поруку..." id="poruka"></textarea>
                 </div>
                 <div>
                   <button type="button" class="btn btn-default btn-round btn-block btn-lg">Пошаљи поруку</button>
@@ -222,7 +222,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </form>
 	  	  <!-- Politika privatnosti Modal -->
 	<div class="col-md-4">
                   <div class="modal fade" id="politika-privatnosti" tabindex="-1" role="dialog" aria-labelledby="privatnost" aria-hidden="true" style="background-color: #FF7F50;">
