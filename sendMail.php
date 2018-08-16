@@ -9,5 +9,6 @@
 		'Reply-To: no-reply@tehnickaskola.edu.rs' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 	mail($recipient, $subject, $formcontent, $headers) or die("Greska!");
-	echo "Vas mejl je poslat!";
+	header( 'Location: success.html' );
+	header('Refresh: 10; URL=https://tehnickaskola.edu.rs/');
 ?>
