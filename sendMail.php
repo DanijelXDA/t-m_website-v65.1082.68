@@ -2,7 +2,7 @@
 	$name = $_POST['ime'];
 	$email = $_POST['email'];
 	$message = $_POST['poruka'];
-	$formcontent="Име: $name \nE-адреса: $email\nПорука: $poruka\n";
+	$formcontent="Име: $name \nE-адреса: $email\nПорука: $message\n";
 	$recipient = "danijelj2001.xda@gmail.com";
 	$subject = "Питање/Сугестија | Техничка школа";
 	$headers = 'From: no-reply@tehnickaskola.edu.rs' . "\r\n" .
