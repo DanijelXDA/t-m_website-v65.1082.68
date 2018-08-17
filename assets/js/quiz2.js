@@ -14,7 +14,7 @@
   }, {
     pitanje: "<p style='color:white;'>Извршни програми имају екстензију:</p>",
     izbori: ['<span style="color:white;">.obj</span>', '<span style="color:white;">.exe</span>', '<span style="color:white;">.run</span>', '<span style="color:white;">.com</span>'],
-    tacanOdgovor: 0
+    tacanOdgovor: 1
   }, {
     pitanje: "<p style='color:white;'>Избаци уљеза:</p>",
     izbori: ['<span style="color:white;">PHP</span>', '<span style="color:white;">ASP</span>', '<span style="color:white;">C++</span>', '<span style="color:white;">JavaScript</span>'],
@@ -30,15 +30,15 @@
   }, {
     pitanje: "<p style='color:white;'>Процесор представља:</p>",
     izbori: ['<span style="color:white;">Кичму рачунара</span>', '<span style="color:white;">Мозак рачунара</span>', '<span style="color:white;">Очи рачунара</span>', '<span style="color:white;">Напајање рачунара</span>'],
-    tacanOdgovor: 0
-  }, {
-	pitanje: "Човек живи у кући у којој сви зидови гледају према југу. Поред куће пролази медвед. Какве је медвед боје?",
-    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 1
   }, {
-    pitanje: "<p style='color:white;'>	</p>",
-    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
-    tacanOdgovor: 1
+	pitanje: "<p style='color:white;'>Source код је:</p>",
+    izbori: ['<span style="color:white;">Преведени код програма</span>', '<span style="color:white;">Извршни код програма</span>', '<span style="color:white;">Изворни код програма</span>', '<span style="color:white;">Веб код</span>'],
+    tacanOdgovor: 2
+  }, {
+    pitanje: "<p style='color:white;'>С# је:</p>",
+    izbori: ['<span style="color:white;">Microsoft развојна платформа</span>', '<span style="color:white;">Процедурални програмски језик</span>', '<span style="color:white;">Скриптни језик</span>', '<span style="color:white;">Објектно оријентисан програмски језик</span>'],
+    tacanOdgovor: 3
   }];
   
   var brojPitanja = 0; //Tracks pitanje number
