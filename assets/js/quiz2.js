@@ -16,20 +16,20 @@
     izbori: ['<span style="color:white;">.obj</span>', '<span style="color:white;">.exe</span>', '<span style="color:white;">.run</span>', '<span style="color:white;">.com</span>'],
     tacanOdgovor: 0
   }, {
-    pitanje: "<p style='color:white;'>	</p>",
-    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
-    tacanOdgovor: 3
+    pitanje: "<p style='color:white;'>Избаци уљеза:</p>",
+    izbori: ['<span style="color:white;">PHP</span>', '<span style="color:white;">ASP</span>', '<span style="color:white;">C++</span>', '<span style="color:white;">JavaScript</span>'],
+    tacanOdgovor: 2
   }, { // Nova pitanja
-    pitanje: "<p style='color:white;'>	</p>",
-    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
-    tacanOdgovor: 2
+    pitanje: "<p style='color:white;'>У програмском језику С важи да је индекс првог члана низа увек:</p>",
+    izbori: ['<span style="color:white;">0</span>', '<span style="color:white;">1</span>', '<span style="color:white;">2</span>', '<span style="color:white;">Свеједно</span>'],
+    tacanOdgovor: 0
   }, {
-    pitanje: "<p style='color:white;'>	</p>",
-    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
-    tacanOdgovor: 2
+    pitanje: "<p style='color:white;'>Једини језик који рачунар разуме је:</p>",
+    izbori: ['<span style="color:white;">Машински језик</span>', '<span style="color:white;">Виши програмски језик</span>', '<span style="color:white;">Windows</span>', '<span style="color:white;">Mac</span>'],
+    tacanOdgovor: 0
   }, {
-    pitanje: "<p style='color:white;'>	</p>",
-    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
+    pitanje: "<p style='color:white;'>Процесор представља:</p>",
+    izbori: ['<span style="color:white;">Кичму рачунара</span>', '<span style="color:white;">Мозак рачунара</span>', '<span style="color:white;">Очи рачунара</span>', '<span style="color:white;">Напајање рачунара</span>'],
     tacanOdgovor: 0
   }, {
 	pitanje: "Човек живи у кући у којој сви зидови гледају према југу. Поред куће пролази медвед. Какве је медвед боје?",
