@@ -1,95 +1,95 @@
 (function() {
-  var questions2 = [{
-    question2: "Колико различитих трочланих екипа за туринир у баскету можемо саставити од 10 ученика једног разреда?",
-    choices2: [160, 100, 120, 80],
-    correctAnswer2: 2
+  var pitanja = [{
+    pitanje: "Колико различитих трочланих екипа за туринир у баскету можемо саставити од 10 ученика једног разреда?",
+    izbori: [160, 100, 120, 80],
+    tacanOdgovor: 2
   }, {
-    question2: "-2 * (-2)^2 + 2^3 - (-2)^3 = ",
-    choices2: [2, 4, 6, 8],
-    correctAnswer2: 3
+    pitanje: "-2 * (-2)^2 + 2^3 - (-2)^3 = ",
+    izbori: [2, 4, 6, 8],
+    tacanOdgovor: 3
   }, {
-    question2: "Када је ученик прочитао половину књиге и још 20 страна остало му је да прочита још трећину књиге. Колико је страна имала књига?",
-    choices2: [135, 120, 80, 200],
-    correctAnswer2: 1
+    pitanje: "Када је ученик прочитао половину књиге и још 20 страна остало му је да прочита још трећину књиге. Колико је страна имала књига?",
+    izbori: [135, 120, 80, 200],
+    tacanOdgovor: 1
   }, {
-    question2: "На колико се начина од 6 јабука могу узети 2 јабуке?",
-    choices2: [15, 36, 3, 12],
-    correctAnswer2: 0
+    pitanje: "На колико се начина од 6 јабука могу узети 2 јабуке?",
+    izbori: [15, 36, 3, 12],
+    tacanOdgovor: 0
   }, {
-    question2: "Настави низ 0, 1, 3, 6, 10, 15, 21 … ?",
-    choices2: [21, 23, 25, 28],
-    correctAnswer2: 3
+    pitanje: "Настави низ 0, 1, 3, 6, 10, 15, 21 … ?",
+    izbori: [21, 23, 25, 28],
+    tacanOdgovor: 3
   }, { // Nova pitanja
-    question2: "У 100 г мешавине чаја 2/5 је нана, 1/4 је кантарион, а остатак је камилица. Колико грама камилице је у тој мешавини?",
-    choices2: [15 + ' g', 25 + ' g', 35 + ' g', 45 + ' g'],
-    correctAnswer2: 2
+    pitanje: "У 100 г мешавине чаја 2/5 је нана, 1/4 је кантарион, а остатак је камилица. Колико грама камилице је у тој мешавини?",
+    izbori: [15 + ' g', 25 + ' g', 35 + ' g', 45 + ' g'],
+    tacanOdgovor: 2
   }, {
-	question2: "Који од система има решење (-1,- 2)?",
-    choices2: ['x - 2y – 3 = 0 <br>&emsp; y = x - 3<br>', '2x – 2y – 3 = 0<br>&emsp; -x + 2y = 3<br>', 'x = - y – 3<br>&emsp; 2y = x – 3<br>', 'x = 2y – 3<br>&emsp; y = x – 3<br>'],
-    correctAnswer2: 2
+	pitanje: "Који од система има решење (-1,- 2)?",
+    izbori: ['x - 2y – 3 = 0 <br>&emsp; y = x - 3<br>', '2x – 2y – 3 = 0<br>&emsp; -x + 2y = 3<br>', 'x = - y – 3<br>&emsp; 2y = x – 3<br>', 'x = 2y – 3<br>&emsp; y = x – 3<br>'],
+    tacanOdgovor: 2
   }, {
-    question2: "Полином (а – 1)(2а + 1) – (а – 6)(а + 6) једнак је полиному: ",
-    choices2: ['-+' + 35, '--' + 37, '+' + 35, '-' + 37],
-    correctAnswer2: 0
+    pitanje: "Полином (а – 1)(2а + 1) – (а – 6)(а + 6) једнак је полиному: ",
+    izbori: ['-+' + 35, '--' + 37, '+' + 35, '-' + 37],
+    tacanOdgovor: 0
   }, {
-	question2: "Човек живи у кући у којој сви зидови гледају према југу. Поред куће пролази медвед. Какве је медвед боје?",
-    choices2: ['браон', 'беле', 'црне', 'смеђе'],
-    correctAnswer2: 1
+	pitanje: "Човек живи у кући у којој сви зидови гледају према југу. Поред куће пролази медвед. Какве је медвед боје?",
+    izbori: ['браон', 'беле', 'црне', 'смеђе'],
+    tacanOdgovor: 1
   }, {
-	question2: "Који геометријски објекат нема осу симетрије?",
-    choices2: ['Кружница', 'Правоугли троугао', 'Једнакостранични троугао', 'Правоугаоник'],
-    correctAnswer2: 1
+	pitanje: "Који геометријски објекат нема осу симетрије?",
+    izbori: ['Кружница', 'Правоугли троугао', 'Једнакостранични троугао', 'Правоугаоник'],
+    tacanOdgovor: 1
   }];
   
-  var questionCounter2 = 0; //Tracks question2 number
-  var selections2 = []; //Array containing user choices2
-  var quiz2 = $('#quiz2'); //quiz2 div object
+  var brojPitanja = 0; //Tracks pitanje number
+  var selekcija = []; //Array containing user izbori
+  var kviz = $('#kviz'); //kviz div object
   
-  // Display initial question2
-  displayNext2();
+  // Display initial pitanje
+  prikaziSledece();
   
-  // Click handler for the 'next2' button
-  $('#next2').on('click', function (e) {
-    e.preventDefault2();
+  // Click handler for the 'dalje' button
+  $('#dalje').on('click', function (e) {
+    e.preventDefault();
     
     // Suspend click listener during fade animation
-    if(quiz2.is(':animated')) {        
+    if(kviz.is(':animated')) {        
       return false;
     }
-    choose2();
+    izaberi();
     
     // If no user selection, progress is stopped
-    if (isNaN(selections2[questionCounter2])) {
+    if (isNaN(selekcija[brojPitanja])) {
       alert('Изабери одговор!');
     } else {
-      questionCounter2++;
-      displayNext2();
+      brojPitanja++;
+      prikaziSledece();
     }
   });
   
-  // Click handler for the 'prev2' button
-  $('#prev2').on('click', function (e) {
-    e.preventDefault2();
+  // Click handler for the 'prethodno' button
+  $('#prethodno').on('click', function (e) {
+    e.preventDefault();
     
-    if(quiz2.is(':animated')) {
+    if(kviz.is(':animated')) {
       return false;
     }
-    choose2();
-    questionCounter2--;
-    displayNext2();
+    izaberi();
+    brojPitanja--;
+    prikaziSledece();
   });
   
-  // Click handler for the 'start2 Over' button
-  $('#start2').on('click', function (e) {
-    e.preventDefault2();
+  // Click handler for the 'pocni Over' button
+  $('#pocni').on('click', function (e) {
+    e.preventDefault();
     
-    if(quiz2.is(':animated')) {
+    if(kviz.is(':animated')) {
       return false;
     }
-    questionCounter2 = 0;
-    selections2 = [];
-    displayNext2();
-    $('#start2').hide();
+    brojPitanja = 0;
+    selekcija = [];
+    prikaziSledece();
+    $('#pocni').hide();
   });
   
   // Animates buttons on hover
@@ -100,88 +100,88 @@
     $(this).removeClass('active');
   });
   
-  // Creates and returns the div that contains the questions2 and 
-  // the answer selections2
-  function createQuestionElement2(index) {
-    var qElement = $('<div>', {
-      id: 'question2'
+  // Creates and returns the div that contains the pitanja and 
+  // the answer selekcija
+  function createQuestionElement(index) {
+    var elementPitanja = $('<div>', {
+      id: 'pitanje'
     });
     
-    var header = $('<h3 style="color: white;">Питање ' + (index + 1) + '</h3>');
-    qElement.append(header);
+    var zaglavlje = $('<h3 style="color: white;">Питање ' + (index + 1) + '</h3>');
+    elementPitanja.append(zaglavlje);
     
-    var question2 = $('<p>').append(questions2[index].question2);
-    qElement.append(question2);
+    var pitanje = $('<p>').append(pitanja[index].pitanje);
+    elementPitanja.append(pitanje);
     
-    var radioButtons = createRadios(index);
-    qElement.append(radioButtons);
+    var dugme = createRadios(index);
+    elementPitanja.append(dugme);
     
-    return qElement;
+    return elementPitanja;
   }
   
-  // Creates a list of the answer choices2 as radio inputs
+  // Creates a list of the answer izbori as radio inputs
   function createRadios(index) {
-    var radioList = $('<ul>');
-    var item;
-    var input = '';
-    for (var i = 0; i < questions2[index].choices2.length; i++) {
-      item = $('<li>');
-      input = '<input type="radio" name="answer" value=' + i + ' />  ';
-      input += questions2[index].choices2[i];
-      item.append(input);
-      radioList.append(item);
+    var listaDugmadi = $('<ul>');
+    var stavka;
+    var unos = '';
+    for (var i = 0; i < pitanja[index].izbori.length; i++) {
+      stavka = $('<li>');
+      unos = '<input type="radio" name="answer" value=' + i + ' />  ';
+      unos += pitanja[index].izbori[i];
+      stavka.append(unos);
+      listaDugmadi.append(stavka);
     }
-    return radioList;
+    return listaDugmadi;
   }
   
   // Reads the user selection and pushes the value to an array
-  function choose2() {
-    selections2[questionCounter2] = +$('input[name="answer"]:checked').val();
+  function izaberi() {
+    selekcija[brojPitanja] = +$('input[name="answer"]:checked').val();
   }
   
-  // Displays next2 requested element
-  function displayNext2() {
-    quiz2.fadeOut(function() {
-      $('#question2').remove();
+  // Displays dalje requested element
+  function prikaziSledece() {
+    kviz.fadeOut(function() {
+      $('#pitanje').remove();
       
-      if(questionCounter2 < questions2.length){
-        var nextQuestion2 = createQuestionElement2(questionCounter2);
-        quiz2.append(nextQuestion2).fadeIn();
-        if (!(isNaN(selections2[questionCounter2]))) {
-          $('input[value='+selections2[questionCounter2]+']').prop('checked', true);
+      if(brojPitanja < pitanja.length){
+        var nextQuestion = createQuestionElement(brojPitanja);
+        kviz.append(nextQuestion).fadeIn();
+        if (!(isNaN(selekcija[brojPitanja]))) {
+          $('unos[value='+selekcija[brojPitanja]+']').prop('checked', true);
         }
         
-        // Controls display of 'prev2' button
-        if(questionCounter2 === 1){
-          $('#prev2').show();
-        } else if(questionCounter2 === 0){
+        // Controls display of 'prethodno' button
+        if(brojPitanja === 1){
+          $('#prethodno').show();
+        } else if(brojPitanja === 0){
           
-          $('#prev2').hide();
-          $('#next2').show();
+          $('#prethodno').hide();
+          $('#dalje').show();
         }
       }else {
-        var scoreElem2 = displayScore2();
-        quiz2.append(scoreElem2).fadeIn();
-        $('#next2').hide();
-        $('#prev2').hide();
-        $('#start2').show();
+        var elemenatPoena = prikazPoena();
+        kviz.append(elemenatPoena).fadeIn();
+        $('#dalje').hide();
+        $('#prethodno').hide();
+        $('#pocni').show();
       }
     });
   }
   
-  // Computes score2 and returns a paragraph element to be displayed
-  function displayScore2() {
-    var score2 = $('<p>',{id: 'question2'});
+  // Computes poeni and returns a paragraph element to be displayed
+  function prikazPoena() {
+    var poeni = $('<p>',{id: 'pitanje'});
     
-    var numCorrect2 = 0;
-    for (var i = 0; i < selections2.length; i++) {
-      if (selections2[i] === questions2[i].correctAnswer2) {
-        numCorrect2++;
+    var brojTacnih = 0;
+    for (var i = 0; i < selekcija.length; i++) {
+      if (selekcija[i] === pitanja[i].tacanOdgovor) {
+        brojTacnih++;
       }
     }
     
-    score2.append('Имаш тачних ' + numCorrect2 + ' од ' +
-                 questions2.length + ' могућих одговора!');
-    return score2;
+    poeni.append('Имаш тачних ' + brojTacnih + ' од ' +
+                 pitanja.length + ' могућих одговора!');
+    return poeni;
   }
 })();
