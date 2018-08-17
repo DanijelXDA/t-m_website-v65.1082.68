@@ -40,7 +40,7 @@
     
     // If no user selection, progress is stopped
     if (isNaN(selections[questionCounter])) {
-      alert('Please make a selection!');
+      alert('Изабери одговор!');
     } else {
       questionCounter++;
       displayNext();
@@ -87,7 +87,7 @@
       id: 'question'
     });
     
-    var header = $('<h2>Question ' + (index + 1) + ':</h2>');
+    var header = $('<h3 style="color: white;">Питање ' + (index + 1) + '</h3>');
     qElement.append(header);
     
     var question = $('<p>').append(questions[index].question);
@@ -160,8 +160,8 @@
       }
     }
     
-    score.append('You got ' + numCorrect + ' questions out of ' +
-                 questions.length + ' right!!!');
+    score.append('Имаш тачних ' + numCorrect + ' од ' +
+                 questions.length + ' 10 могућих одговора!');
     return score;
   }
 })();
