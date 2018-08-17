@@ -1,43 +1,43 @@
 (function() {
   var pitanja = [{
-    pitanje: "Колико различитих трочланих екипа за туринир у баскету можемо саставити од 10 ученика једног разреда?",
-    izbori: [160, 100, 120, 80],
-    tacanOdgovor: 2
-  }, {
-    pitanje: "-2 * (-2)^2 + 2^3 - (-2)^3 = ",
-    izbori: [2, 4, 6, 8],
-    tacanOdgovor: 3
-  }, {
-    pitanje: "Када је ученик прочитао половину књиге и још 20 страна остало му је да прочита још трећину књиге. Колико је страна имала књига?",
-    izbori: [135, 120, 80, 200],
-    tacanOdgovor: 1
-  }, {
-    pitanje: "На колико се начина од 6 јабука могу узети 2 јабуке?",
-    izbori: [15, 36, 3, 12],
+    pitanje: "<p style='color:white;'>Google Chrome је?</p>",
+    izbori: ['<span style="color:white;">Веб прегледач</span>', '<span style="color:white;">Веб сервер</span>', '<span style="color:white;">Програмски језик</span>', '<span style="color:white;">Текст едитор</span>'],
     tacanOdgovor: 0
   }, {
-    pitanje: "Настави низ 0, 1, 3, 6, 10, 15, 21 … ?",
-    izbori: [21, 23, 25, 28],
+    pitanje: "<p style='color:white;'>Исправна синтакса елемента за прелазак у нови ред је:</p>",
+    izbori: ['<span style="color:white;">p</span>', '<span style="color:white;">break</span>', '<span style="color:white;">b</span>', '<span style="color:white;">br</span>'],
+    tacanOdgovor: 3
+  }, {
+    pitanje: "<p style='color:white;'>Потребно је у некој класи дефинисати поље season у коме би се чувало једно од четири годишња доба. Најбоље је да то поље буде типа:</p>",
+    izbori: ['<span style="color:white;">string</span>', '<span style="color:white;">int</span>', '<span style="color:white;">набрајање Season које би имало именоване константе Spring, Summer, Autumn и Winter</span>', '<span style="color:white;">char</span>'],
+    tacanOdgovor: 2
+  }, {
+    pitanje: "<p style='color:white;'>Извршни програми имају екстензију:</p>",
+    izbori: ['<span style="color:white;">.obj</span>', '<span style="color:white;">.exe</span>', '<span style="color:white;">.run</span>', '<span style="color:white;">.com</span>'],
+    tacanOdgovor: 0
+  }, {
+    pitanje: "<p style='color:white;'>	</p>",
+    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 3
   }, { // Nova pitanja
-    pitanje: "У 100 г мешавине чаја 2/5 је нана, 1/4 је кантарион, а остатак је камилица. Колико грама камилице је у тој мешавини?",
-    izbori: [15 + ' g', 25 + ' g', 35 + ' g', 45 + ' g'],
+    pitanje: "<p style='color:white;'>	</p>",
+    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 2
   }, {
-	pitanje: "Који од система има решење (-1,- 2)?",
-    izbori: ['x - 2y – 3 = 0 <br>&emsp; y = x - 3<br>', '2x – 2y – 3 = 0<br>&emsp; -x + 2y = 3<br>', 'x = - y – 3<br>&emsp; 2y = x – 3<br>', 'x = 2y – 3<br>&emsp; y = x – 3<br>'],
+    pitanje: "<p style='color:white;'>	</p>",
+    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 2
   }, {
-    pitanje: "Полином (а – 1)(2а + 1) – (а – 6)(а + 6) једнак је полиному: ",
-    izbori: ['-+' + 35, '--' + 37, '+' + 35, '-' + 37],
+    pitanje: "<p style='color:white;'>	</p>",
+    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 0
   }, {
 	pitanje: "Човек живи у кући у којој сви зидови гледају према југу. Поред куће пролази медвед. Какве је медвед боје?",
-    izbori: ['браон', 'беле', 'црне', 'смеђе'],
+    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 1
   }, {
-	pitanje: "Који геометријски објекат нема осу симетрије?",
-    izbori: ['Кружница', 'Правоугли троугао', 'Једнакостранични троугао', 'Правоугаоник'],
+    pitanje: "<p style='color:white;'>	</p>",
+    izbori: ['<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>', '<span style="color:white;"></span>'],
     tacanOdgovor: 1
   }];
   
@@ -121,7 +121,7 @@
   
   // Creates a list of the answer izbori as radio inputs
   function createRadios(index) {
-    var listaDugmadi = $('<ul>');
+    var listaDugmadi = $('<ul style="color: white;">');
     var stavka;
     var unos = '';
     for (var i = 0; i < pitanja[index].izbori.length; i++) {
@@ -180,8 +180,8 @@
       }
     }
     
-    poeni.append('Имаш тачних ' + brojTacnih + ' од ' +
-                 pitanja.length + ' могућих одговора!');
+    poeni.append('<span style="color:white;">Имаш тачних </span>' + brojTacnih + '<span style="color:white;"> од </span>' +
+                 pitanja.length + ' <span style="color:white;">могућих одговора!</span>');
     return poeni;
   }
 })();
