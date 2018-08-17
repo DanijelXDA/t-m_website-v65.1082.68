@@ -367,7 +367,7 @@
                                     У свету који се брзо дигитализује поседовање техничких вештина – и нарочито познавање програмирања – може бити твоја
                                     предност за боље личне и професионалне прилике и успехе.<br /><br />
                                  </p>
-                                 <a href="#" class="text-warning">Провери знање из програмирања</a>
+                                 <a href="#" class="text-warning" data-toggle="modal" data-target="#prog">Провери знање из програмирања</a>
                               </div>
                            </div>
                         </div>
@@ -488,6 +488,34 @@
                </div>
             </div>
          </div>
+		 <!-- Programiranje kviz Modal -->
+         <div class="col-md-4">
+            <div class="modal fade" id="prog" tabindex="-1" role="dialog" aria-labelledby="pro" aria-hidden="true" style="background-image: url('assets/img/kviz/prog.jpg');">
+               <div class="modal-dialog modal-gray modal-dialog-centered modal-" role="document">
+                  <div class="modal-content bg-gradient-gray">
+                     <div class="modal-header" style="border-bottom: none;">
+                        <h4 class="modal-title text-white" id="pro">Програмирање квиз</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <div id='container'>
+                           <img src="assets/img/kviz/prog.jpg" class="img-fluid">
+                           <br/>
+                           <br/>
+                           <div id='quiz'></div>
+                           <div class='btn btn-neutral' id='next'><a href='#'>Следеће питање</a></div> <br /><br />
+                           <div class='btn btn-neutral' id='prev'><a href='#'>Претходно питање</a></div>
+                        </div>
+                     </div>
+                     <div class="modal-footer" style="border-bottom: none;">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Затвори</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </main>
       <footer class="footer has-cards">
          <div class="container">
@@ -544,5 +572,6 @@
       <script src="assets/js/argon.js?v=1.0.0"></script>
       <!-- Quiz -->
       <script src="assets/js/quiz.js"></script>
+      <script src="assets/js/quiz2.js"></script>
    </body>
 </html>
