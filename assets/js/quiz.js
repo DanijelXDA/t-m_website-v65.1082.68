@@ -1,24 +1,24 @@
 (function() {
   var questions = [{
-    question: "What is 2*5?",
-    choices: [2, 5, 10, 15, 20],
+    question: "Колико различитих трочланих екипа за туринир у баскету можемо саставити од 10 ученика једног разреда?",
+    choices: [160, 100, 120, 80],
     correctAnswer: 2
   }, {
-    question: "What is 3*6?",
-    choices: [3, 6, 9, 12, 18],
-    correctAnswer: 4
-  }, {
-    question: "What is 8*9?",
-    choices: [72, 99, 108, 134, 156],
-    correctAnswer: 0
-  }, {
-    question: "What is 1*7?",
-    choices: [4, 5, 6, 7, 8],
+    question: "-2 * (-2)^2 + 2^3 - (-2)^3 = ",
+    choices: [2, 4, 6, 8],
     correctAnswer: 3
   }, {
-    question: "What is 8*8?",
-    choices: [20, 30, 40, 50, 64],
-    correctAnswer: 4
+    question: "Када је ученик прочитао половину књиге и још 20 страна остало му је да прочита још трећину књиге. Колико је страна имала књига?",
+    choices: [135, 120, 80, 200],
+    correctAnswer: 1
+  }, {
+    question: "На колико се начина од 6 јабука могу узети 2 јабуке?",
+    choices: [15, 36, 3, 12],
+    correctAnswer: 0
+  }, {
+    question: "Настави низ 0, 1, 3, 6, 10, 15, 21 … ?",
+    choices: [21, 23, 25, 28],
+    correctAnswer: 3
   }];
   
   var questionCounter = 0; //Tracks question number
@@ -106,7 +106,7 @@
     var input = '';
     for (var i = 0; i < questions[index].choices.length; i++) {
       item = $('<li>');
-      input = '<input type="radio" name="answer" value=' + i + ' />';
+      input = '<input type="radio" name="answer" value=' + i + ' />  ';
       input += questions[index].choices[i];
       item.append(input);
       radioList.append(item);
@@ -161,7 +161,7 @@
     }
     
     score.append('Имаш тачних ' + numCorrect + ' од ' +
-                 questions.length + ' 10 могућих одговора!');
+                 questions.length + ' могућих одговора!');
     return score;
   }
 })();
