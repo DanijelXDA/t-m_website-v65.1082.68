@@ -8,5 +8,4 @@
 		'X-Mailer: PHP/' . phpversion();
 	mail($recipient, $subject, $formcontent, $headers) or die("Greska!");
 	header( 'Location: pretplata-na-newsletter.html' );
-	header('Refresh: 10; URL=https://tehnickaskola.edu.rs/');
 ?>
