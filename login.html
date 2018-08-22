@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 
 <head>
   <meta charset="utf-8">
@@ -16,16 +16,48 @@
   <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="assets/css/argon.css?v=1.0.0" rel="stylesheet">
-  <!-- Docs CSS -->
-  <link type="text/css" href="assets/css/docs.min.css" rel="stylesheet">
+  <style>
+	   /* Custom scroll bar */
+		 /* width */
+		::-webkit-scrollbar {
+			width: 9px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px grey; 
+			border-radius: 10px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #6d85bc; 
+			border-radius: 10px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #556; 
+		}
+		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120962458-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-120962458-1');
+		</script>
+		
 </head>
 
 <body>
-<header class="header-global">
+  <header class="header-global">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
       <div class="container">
         <a class="navbar-brand mr-lg-5" href="https://tehnickaskola.edu.rs">
-          <img src="assets/img/brand/white.png">
+          <img src="assets/img/brand/white.png" style="height: 60px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -97,7 +129,7 @@
                       <p class="description d-none d-md-inline-block mb-0">Ко још не воли игрице?<br/>Мало забаве не може да шкоди.</p>
                     </div>
                   </a>
-                  <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
+                  <a href="http://webaplikacija.tehnickaskola.edu.rs" class="media d-flex align-items-center">
                     <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                       <i class="ni ni-ui-04"></i>
                     </div>
@@ -129,14 +161,6 @@
                 <span class="nav-link-inner--text d-lg-none">Github</span>
               </a>
             </li>
-          <li class="nav-item d-none d-lg-block ml-lg-4">
-              <a href="login.html" target="_blank" class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-user mr-2"></i>
-                </span>
-                <span class="nav-link-inner--text">Пријава</span>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -155,6 +179,13 @@
         <span></span>
       </div>
       <div class="container pt-lg-md">
+	  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <span class="alert-inner--icon"><i class="fa fa-exclamation-triangle"></i></span>
+    <span class="alert-inner--text"><strong>Напомена!</strong> Страница за приступ још увек није повезана са базом података. Логовање на систем је онемогућено!</span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="card bg-secondary shadow border-0">
@@ -163,13 +194,13 @@
                   <small>Пријави се са</small>
                 </div>
                 <div class="btn-wrapper text-center">
-                  <a href="#" class="btn btn-neutral btn-icon">
+                  <a href="#" class="btn btn-neutral btn-icon disabled">
                     <span class="btn-inner--icon">
                       <img src="assets/img/icons/common/github.svg">
                     </span>
                     <span class="btn-inner--text">Github</span>
                   </a>
-                  <a href="#" class="btn btn-neutral btn-icon">
+                  <a href="#" class="btn btn-neutral btn-icon disabled">
                     <span class="btn-inner--icon">
                       <img src="assets/img/icons/common/google.svg">
                     </span>
@@ -205,14 +236,14 @@
                     </label>
                   </div>
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary my-4">Пријави се</button>
+                    <button type="button" class="btn btn-primary my-4 disabled">Пријави се</button>
                   </div>
                 </form>
               </div>
             </div>
             <div class="row mt-3">
               <div class="col-6">
-                <a href="#" class="text-light">
+                <a href="#" class="text-light disabled">
                   <small>Заборављена лозинка?</small>
                 </a>
               </div>
@@ -227,6 +258,62 @@
         </div>
       </div>
     </section>
+	         <!-- Politika privatnosti Modal -->
+         <div class="col-md-4">
+            <div class="modal fade" id="politika-privatnosti" tabindex="-1" role="dialog" aria-labelledby="privatnost" aria-hidden="true" style="background-color: #141147;">
+               <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                  <div class="modal-content bg-gradient-default">
+                     <div class="modal-header">
+                        <h4 class="modal-title" id="privatnost">Политика приватности</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <p>
+                           <img class="img-fluid img-center" alt="" src="assets/img/modal/e79ea0ed464fc8952d5b5582f9f9ae53.svg" />
+                           Информације које прикупљамо обухватају јединствене идентификаторе, тип и подешавања прегледача, тип
+                           и подешавања уређаја, оперативни систем, информације о мобилној мрежи укључујући назив мобилног оператера и број мобилног телефона,
+                           и број верзије апликације. Прикупљамо и информације о интеракцији ваших апликација, прегледача
+                           и уређаја са услугама, укључујући IP адресу, извештаје о отказивању, активности система, као и датум, 
+                           време и URL упућивача за захтев.
+                        </p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Затвори</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Uslovi korišćenja Modal -->
+         <div class="col-md-4">
+            <div class="modal fade" id="uslovi-koriscenja" tabindex="-1" role="dialog" aria-labelledby="uslovi" aria-hidden="true" style="background-color: #141147;">
+               <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                  <div class="modal-content bg-gradient-default">
+                     <div class="modal-header">
+                        <h4 class="modal-title" id="uslovi">Коришћење услуга</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                     </div>
+                     <div class="modal-body">
+                        <p>
+                           <img class="img-fluid img-center" alt="" src="assets/img/modal/e79ea0ed464fc8952d5b5582f9f9ae53.svg" />
+                           Морате да поштујете све смернице које су вам доступне у оквиру Услуга. 
+                           Немојте да злоупотребљавате наше Услуге. На пример, немојте да ометате Услуге или да покушавате да им приступите користећи 
+                           метод који се разликује од интерфејса и упутстава које ми пружамо. Услуге можете да користите само на начин који је дозвољен
+                           законом, укључујући важеће законе и прописе који се односе на контролу извоза и поновног извоза. Можемо да обуставимо или прекинемо
+                           да вам пружамо Услуге уколико се не придржавате наших услова или смерница.
+                        </p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Затвори</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
   </main>
   <footer class="footer has-cards">
     <div class="container">
