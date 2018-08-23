@@ -5247,45 +5247,6 @@ fieldset:disabled a.btn {
 	color: #000
 }
 
-@keyframes progress-bar-stripes {
-	from {
-		background-position: 1rem 0
-	}
-	to {
-		background-position: 0 0
-	}
-}
-
-.progress {
-	font-size: .75rem;
-	display: flex
-}
-
-.progress-bar {
-	display: flex;
-	flex-direction: column;
-	transition: width .6s ease;
-	text-align: center;
-	color: #fff;
-	background-color: #5e72e4;
-	justify-content: center
-}
-
-@media screen and (prefers-reduced-motion:reduce) {
-	.progress-bar {
-		transition: none
-	}
-}
-
-.progress-bar-striped {
-	background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-	background-size: 1rem 1rem
-}
-
-.progress-bar-animated {
-	animation: progress-bar-stripes 1s linear infinite
-}
-
 .media {
 	display: flex;
 	align-items: flex-start
