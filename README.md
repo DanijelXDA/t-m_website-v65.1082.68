@@ -3,15 +3,14 @@
 <br/>
 <center>
 <img src="https://tehnickaskola.edu.rs/rs/intro.gif">
-</center>
+</center><br/>
 What's new in this release: <br />
     -> Version Infinity<br />
         &emsp;- UI has been redesigned<br />
-        &emsp;- Updated Bootstrap <br />
-        &emsp;- Scripts was updated<br />
-        &emsp;- Migrate to full version of JQuery instead of slim version<br />
+        &emsp;- Minimized JS, CSS, HTML <br />
+        &emsp;- Scripts were updated<br />
         &emsp;- Icons have got some colors<br />
-        &emsp;- Main Page has got a lightweight design<br />
+        &emsp;- Every Page has got a lightweight design<br />
         &emsp; - Code Optimisation<br />
 
 
