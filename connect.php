@@ -1,12 +1,12 @@
  <?php 
-	 $username = filter_input(INPUT_POST, 'username');
-	 $password = filter_input(INPUT_POST, 'password');
-	 if (!empty($username)){
-	if (!empty($password)){
+ 	$ime = filter_input(INPUT_POST, 'ime');
+	$email = filter_input(INPUT_POST, 'imejl');
+	$password = filter_input(INPUT_POST, 'sifra');
+
 	$host = "localhost";
 	$dbusername = "root";
 	$dbpassword = "";
-	$dbname = "baza";
+	$dbname = "tsm_baza_za_sajt";
 
 	// Create connection
 	$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
@@ -16,8 +16,8 @@
 		. mysqli_connect_error());
 	}
 	else{
-	  $sql = "INSERT INTO account (username, password)
-	  values ('$username','$password')";
+	  $sql = "INSERT INTO account (ime, imejl, sifra)
+	  values ('$ime','$email', '$password')";
 	  if ($conn->query($sql)){
 		header( 'Location: prijava.html' );
 	  }
@@ -27,14 +27,5 @@
 	  }
 	  $conn->close();
 	}
-	}
-	else{
-	  echo "Password should not be empty";
-	  die();
-	}
-	 }
-	 else{
-	  echo "Username should not be empty";
-	  die();
-	 }
+
 ?>
