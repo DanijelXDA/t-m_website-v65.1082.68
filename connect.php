@@ -19,7 +19,7 @@
 	  $sql = "INSERT INTO account (username, password)
 	  values ('$username','$password')";
 	  if ($conn->query($sql)){
-		echo "New record is inserted sucessfully";
+		header( 'Location: prijava.html' );
 	  }
 	  else{
 		echo "Error: ". $sql ."
