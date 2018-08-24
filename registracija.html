@@ -184,15 +184,15 @@
                </div>
               <div class="card-body px-lg-5">
                 <div class="text-center text-muted mb-4">
-                  <small>Регистрација на систем</small>
+                  <h4><em>Регистрација на систем</em></h4>
                 </div>
-                <form role="form">
+                <form method="post" action="connect.php">
                   <div class="form-group">
                     <div class="input-group input-group-alternative mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Name" type="text">
+                      <input class="form-control" placeholder="Име" type="text" id="ime" name="ime" required>
                     </div>
                   </div>
                   <div class="form-group">
@@ -200,7 +200,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Email" type="email">
+                      <input class="form-control" placeholder="Адреса е-поште" type="email" id="imejl" name="imejl" required>
                     </div>
                   </div>
                   <div class="form-group">
@@ -208,13 +208,13 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Password" type="password">
+                      <input class="form-control" placeholder="Лозинка" type="password" id="sifra" name="sifra" required>
                     </div>
                   </div>
                   <div class="row my-4">
                     <div class="col-12">
                       <div class="custom-control custom-control-alternative custom-checkbox">
-                        <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                        <input class="custom-control-input" id="customCheckRegister" type="checkbox" required>
                         <label class="custom-control-label" for="customCheckRegister">
                           <span>Слажем са
                             <a href="https://policies.google.com/privacy?hl=sr&gl=ZZ">Политиком приватности</a>
@@ -224,7 +224,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary mt-4">Create account</button>
+                    <button type="submit" class="btn btn-primary mt-4">Креирај налог</button>
                   </div>
                 </form>
               </div>
