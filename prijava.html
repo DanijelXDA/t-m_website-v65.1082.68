@@ -3,9 +3,9 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Registracija na sistem...">
+      <meta name="description" content="Prijava na sistem...">
       <meta name="author" content="Danijel Jovanović">
-      <title>Регистрација на систем | Техничка школа</title>
+      <title>Пријава | Техничка школа</title>
       <!-- Favicon -->
       <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
       <!-- Icons -->
@@ -158,82 +158,78 @@
          </nav>
       </header>
       <main>
-    <section class="section section-shaped section-lg my-0">
-      <div class="shape shape-style-1 bg-gradient-default">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="container pt-lg-md">
-        <div class="row justify-content-center">
-		
-          <div class="col-lg-5">
-		  
-            <div class="card bg-secondary shadow border-0">
-			   <div class="alert alert-success alert-dismissible fade show" role="alert">
-                  <span class="alert-inner--icon"><i class="fa fa-exclamation-triangle"></i></span>
-                  <span class="alert-inner--text"><strong>Напомена!</strong><br>Свако креирање лажног налога биће кажњено!</span>
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-              <div class="card-body px-lg-5">
-                <div class="text-center text-muted mb-4">
-                  <h4><em>Регистрација на систем</em></h4>
-                </div>
-                <form method="post" action="connect.php">
-                  <div class="form-group">
-                    <div class="input-group input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                      </div>
-                      <input class="form-control" placeholder="Име" type="text" id="ime" name="ime" required>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group input-group-alternative mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                      </div>
-                      <input class="form-control" placeholder="Адреса е-поште" type="email" id="imejl" name="imejl" required>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group input-group-alternative">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                      </div>
-                      <input class="form-control" placeholder="Лозинка" type="password" id="sifra" name="sifra" required>
-                    </div>
-                  </div>
-                  <div class="row my-4">
-                    <div class="col-12">
-                      <div class="custom-control custom-control-alternative custom-checkbox">
-                        <input class="custom-control-input" id="customCheckRegister" type="checkbox" required>
-                        <label class="custom-control-label" for="customCheckRegister">
-                          <span>Слажем са
-                            <a href="https://policies.google.com/privacy?hl=sr&gl=ZZ">Политиком приватности</a>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary mt-4">Креирај налог</button>
-                  </div>
-                </form>
-              </div>
+         <section class="section section-shaped section-lg my-0">
+            <div class="shape shape-style-1 bg-gradient-default">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+            <div class="container pt-lg-md">
+               <div class="row justify-content-center">
+                  <div class="col-lg-5">
+                     <div class="card bg-secondary shadow border-0">
+					   <div class="alert alert-success alert-dismissible fade show" role="alert">
+						  <span class="alert-inner--icon"><i class="fa fa-exclamation-triangle"></i></span>
+						  <span class="alert-inner--text"><strong>Регистрација успешна!</strong><br>Пријави се сада са твојим кредитиалима.</span>
+						  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						  </button>
+					   </div>
+                        <div class="card-body px-lg-5 py-lg-5">
+                           <div class="text-center text-muted mb-4">
+                              <h4><em>Пријављивање на систем</em></h4>
+                           </div>
+                           <form>
+                              <div class="form-group mb-3">
+                                 <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Е-адреса" type="email">
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Лозинка" type="password">
+                                 </div>
+                              </div>
+                              <div class="custom-control custom-control-alternative custom-checkbox">
+                                 <input class="custom-control-input" id="customCheckLogin" type="checkbox">
+                                 <label class="custom-control-label" for="customCheckLogin">
+                                 <span>Запамти ме</span>
+                                 </label>
+                              </div>
+                              <div class="text-center">
+                                 <button type="button" class="btn btn-primary my-4 disabled">Пријави се</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="row mt-3">
+                        <div class="col-6">
+                           <a href="#" class="text-light disabled">
+                           <small>Заборављена лозинка?</small>
+                           </a>
+                        </div>
+                        <div class="col-6 text-right">
+                           <!-- <a href="#" class="text-light">
+                              <small>Create new account</small>
+                              -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
       <footer class="footer has-cards">
          <div class="container">
             <div class="row row-grid align-items-center my-md">
