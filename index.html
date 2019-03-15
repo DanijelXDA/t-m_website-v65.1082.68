@@ -641,13 +641,14 @@
          <div class=container>
             <div class=row>
                <div class="col-lg-12 text-center">
-                  <h2>Subscribe to our newsletter</h2>
-                  <p class=mb-5>Receive updates, news and deals</p>
+                  <h2>Претплата на новости</h2>
+                  <p class=mb-5>Останите у току са дешавањима у нашој школи.</p>
                </div>
                <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-                  <form action=#>
-                     <div class="input-wrapper position-relative"><input type=email class=newsletter-form id=newsletter placeholder="Enter your email">
-                        <button type=submit value=send class="btn newsletter-btn">subscribe</button>
+                  <form action="novosti.php" method="POST">
+                     <div class="input-wrapper position-relative">
+					 <input type=email class=newsletter-form id=newsletter placeholder="Unesite vaš email">
+                        <button type=submit value=send class="btn newsletter-btn">Претплата</button>
                      </div>
                   </form>
                </div>
