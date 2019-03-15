@@ -5,7 +5,7 @@
 <img src="https://tehnickaskola.edu.rs/images/uvod.JPG">
 </center><br/>
 What's new in this release: <br />
-    -> Version Infinity<br />
+    -> Version Refresh<br />
         &emsp;- UI has been redesigned<br />
         &emsp;- Minimized JS, CSS, HTML <br />
         &emsp;- Scripts were updated<br />
