@@ -1240,6 +1240,20 @@ textarea.form-control {
 	text-align: center
 }
 
+.ikonica-krug {
+	display: inline-block;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 45px;
+	line-height: 90px;
+	background: #008dec;
+	box-shadow: 0 18px 25px 0 rgba(0, 141, 236, .1);
+	text-align: center;
+	transition: .2s ease
+}
+
 .round-icon.green {
 	background: #e0fef4;
 	color: #00f7a7
