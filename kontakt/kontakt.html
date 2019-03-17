@@ -97,10 +97,10 @@
             </div>
             <div class="row contact-bg p-5 rounded mb-5">
                <div class="col-lg-7 mb-4 mb-lg-0">
-                  <form action=# method=post><input type=text class="form-control mb-3" id=name name=name placeholder="Ваше име">
-                     <input type=email class="form-control mb-3" id=mail name=mail placeholder="Ваша е-адреса">
+                  <form action=kontakt.php method=post><input type=text class="form-control mb-3" name="ime" id="ime" required placeholder="Ваше име">
+                     <input type=email class="form-control mb-3" name="email" id="email" required placeholder="Ваша е-адреса">
                      <input type=text class="form-control mb-3" id=subject name=subject placeholder="Текст поруке">
-                     <textarea name=message id=message class="form-control mb-3" placeholder="Ваша порука..."></textarea>
+                     <textarea name="poruka" id="poruka" required class="form-control mb-3" placeholder="Ваша порука..."></textarea>
                      <button type=submit value=send class="btn btn-secondary">Пошаљите поруку</button>
                   </form>
                </div>
