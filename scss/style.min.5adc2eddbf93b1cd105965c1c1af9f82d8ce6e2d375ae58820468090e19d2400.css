@@ -21,9 +21,31 @@
 	-moz-user-drag: none;
 	-o-user-drag: none;
 	user-drag: none;
+	
 }
 
 @import "https://fonts.googleapis.com/css?family=Exo+2:500,800&subset=cyrillic";
+
+/* Custom scroll bar */
+         /* width */
+         ::-webkit-scrollbar {
+         width: 8px;
+         }
+         /* Track */
+         ::-webkit-scrollbar-track {
+         box-shadow: inset 0 0 5px grey; 
+         border-radius: 10px;
+         }
+         /* Handle */
+         ::-webkit-scrollbar-thumb {
+         background: #008dec; 
+         border-radius: 10px;
+         }
+         /* Handle on hover */
+         ::-webkit-scrollbar-thumb:hover {
+         background: #008dff; 
+         }
+		 
 body {
 	line-height: 31px;
 	font-family: Exo 2, sans-serif;
