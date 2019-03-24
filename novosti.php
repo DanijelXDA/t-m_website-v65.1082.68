@@ -1,5 +1,5 @@
 <?php 
-	$email = $_POST['mejl'];
+	$email = $_POST['nov'];
 	$formcontent="Успешно си се пријавио на Newsletter Техничке школе.\n\nХвала на пријави!\n\nСрдачан поздрав, \nУредништво Техничке школе Младеновац.";
 	$recipient = $email;
 	$subject = "Претплата на Newsletter | Техничка школа";
