@@ -7,7 +7,7 @@
 What's new in this release: <br />
     -> Version Winter 2020<br />
         &emsp;- PHP removed to prevent spam<br />
-        &emsp; - Code Optimisation<br />
+        &emsp; - Code Optimisation<br /><br/>
 
 
     ** For full changelog check commits ;)
