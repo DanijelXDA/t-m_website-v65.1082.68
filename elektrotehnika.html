@@ -8,33 +8,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta content="Tehnička škola Mladenovac, smerovi Tehničke škole, elektrotehnika, obrazovni profili" name="keywords">
       <!-- Favicon -->
-      <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
-      <!-- Icons -->
-      <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-      <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <!-- Argon CSS -->
-      <link type="text/css" href="assets/css/argon.css?v=1.0.0" rel="stylesheet">
-      <style>
-         /* Custom scroll bar */
-         /* width */
-         ::-webkit-scrollbar {
-         width: 9px;
-         }
-         /* Track */
-         ::-webkit-scrollbar-track {
-         box-shadow: inset 0 0 5px grey; 
-         border-radius: 10px;
-         }
-         /* Handle */
-         ::-webkit-scrollbar-thumb {
-         background: #fb6340; 
-         border-radius: 10px;
-         }
-         /* Handle on hover */
-         ::-webkit-scrollbar-thumb:hover {
-         background: #556; 
-         }
-      </style>
+      <link href="images/favicon.webp" rel="icon" type="image/png">
+      <meta name="author" content="Danijel Jovanović">
+      <meta name="generator" content="Техничка школа Младеновац 1052.55">
+      <noscript>
+         <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+         <link rel="stylesheet" href="plugins/slick/slick.css">
+         <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+         <link rel="stylesheet" href="plugins/Venobox/venobox.css">
+         <link rel="stylesheet" href="plugins/aos/aos.css">
+      </noscript>
+      <link rel=stylesheet href="scss/style.min.5adc2eddbf93b1cd105965c1c1af9f82d8ce6e2d375ae58820468090e19d2400.css" media=screen>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120962458-1"></script>
       <script>
@@ -46,268 +30,270 @@
       </script>
    </head>
    <body>
-      <header class="header-global">
-         <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
-            <div class="container">
-               <a class="navbar-brand mr-lg-5" href="https://tehnickaskola.edu.rs">
-               <img src="assets/img/brand/white.png" style="height: 60px;" alt="img">
+      <section class="fixed-top navigation">
+         <div class=container>
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a class=navbar-brand href=https://tehnickaskola.edu.rs/>
+               <img src=images/logo.webp alt=img style="height: 60px;" />
                </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="navbar-collapse collapse" id="navbar_global">
-                  <div class="navbar-collapse-header">
-                     <div class="row">
-                        <div class="col-6 collapse-brand">
-                           <a href="https://tehnickaskola.edu.rs">
-                           <img src="assets/img/brand/blue.png" alt="img">
+               <button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navbar aria-controls=navbar aria-expanded=false aria-label="Toggle navigation">
+               <span class=navbar-toggler-icon></span></button>
+               <div class="collapse navbar-collapse text-center" id=navbar>
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class=nav-link href=https://tehnickaskola.edu.rs/>Почетна</a></li>
+                     <li class="nav-item"><a class="nav-link page-scroll" href=https://tehnickaskola.edu.rs/oSkoli>О&nbsp;школи</a></li>
+                     <li class="nav-item"><a class="nav-link page-scroll" href=obrazovniProfili>Образовни&nbsp;профили</a></li>
+                     <li class="nav-item"><a class="nav-link page-scroll" href=https://javnenabavke.tehnickaskola.edu.rs>Јавне&nbsp;набавке</a></li>
+                     <li class="nav-item"><a class="nav-link page-scroll" href=upisUSkolu.html>Упис</a></li>
+                     <li class="nav-item"><a class="nav-link page-scroll" href=kontakt>Контакт</a></li>
+                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                        <li class=""nav-item"">
+                           <a class="nav-link nav-link-icon" href="https://www.facebook.com/mladenovac.tehnicka.skola/" target="_blank" data-toggle="tooltip" title="Лајкуј нас на Фејсбуку">
+                           <i class="ti-facebook"></i>
+                           <span class="nav-link-inner--text d-lg-none">Facebook</span>
                            </a>
+                        </li>
+                        <li class=""nav-item"">
+                           <a class="nav-link nav-link-icon" href="https://www.google.com/maps?q=tehnicka+skola+mladenovac&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj1ytTn5YThAhUqy4UKHdXACNcQ_AUIDygC" target="_blank" data-toggle="tooltip" title="Где  се налазимо?">
+                           <i class="ti-map-alt"></i>
+                           <span class="nav-link-inner--text d-lg-none">Мапа</span>
+                           </a>
+                        </li>
+                        <li class=""nav-item"">
+                           <a class="nav-link nav-link-icon" href="https://github.com/DanijelXDA/tehnickaSkolaWebSajt" target="_blank" data-toggle="tooltip" title="Пројекат на Github-у">
+                           <i class="ti-github"></i>
+                           <span class="nav-link-inner--text d-lg-none">Github</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </section>
+      <svg class="seo-bg-shape-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138">
+         <defs>
+            <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0" y="0" width="138" height="138"  >
+               <feOffset in="SourceAlpha" dx="0" dy="23" />
+               <feGaussianBlur result="blurOut" stdDeviation="6.557" />
+               <feFlood flood-color="rgb(20, 247, 227)" result="floodOut" />
+               <feComposite operator="atop" in="floodOut" in2="blurOut" />
+               <feComponentTransfer>
+                  <feFuncA type="linear" slope=".3"/>
+               </feComponentTransfer>
+               <feMerge>
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic"/>
+               </feMerge>
+            </filter>
+            <linearGradient id="PSgrad_0" x1="98.163%" x2="0" y1="0" y2="19.081%">
+               <stop offset="0" stop-color="rgb(123,185,255)" stop-opacity="1" />
+               <stop offset="100%" stop-color="rgb(6,255,223)" stop-opacity="1" />
+            </linearGradient>
+         </defs>
+         <g filter="url(#Filter_0)">
+            <path fill-rule="evenodd" fill="rgb(246, 255, 163)" d="M68.5 19C83.136 19 95 30.864 95 45.5 95 60.135 83.136 72 68.5 72 53.864 72 42 60.135 42 45.5 42 30.864 53.864 19 68.5 19z"/>
+         </g>
+         <path fill="url(#PSgrad_0)" d="M68.5 19C83.136 19 95 30.864 95 45.5 95 60.135 83.136 72 68.5 72 53.864 72 42 60.135 42 45.5 42 30.864 53.864 19 68.5 19z"/>
+      </svg>
+      <svg class="seo-bg-shape-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138">
+         <defs>
+            <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0" y="0" width="138" height="138"  >
+               <feOffset in="SourceAlpha" dx="0" dy="23" />
+               <feGaussianBlur result="blurOut" stdDeviation="6.557" />
+               <feFlood flood-color="rgb(120, 200, 215)" result="floodOut" />
+               <feComposite operator="atop" in="floodOut" in2="blurOut" />
+               <feComponentTransfer>
+                  <feFuncA type="linear" slope=".3"/>
+               </feComponentTransfer>
+               <feMerge>
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic"/>
+               </feMerge>
+            </filter>
+            <linearGradient id="PSgrad_0" x1="98.163%" x2="0" y1="0" y2="19.081%">
+               <stop offset="0" stop-color="rgb(23,255,211)" stop-opacity="1" />
+               <stop offset="100%" stop-color="rgb(6,255,12)" stop-opacity="1" />
+            </linearGradient>
+         </defs>
+         <g filter="url(#Filter_0)">
+            <path fill-rule="evenodd" fill="rgb(246, 255, 163)" d="M68.5 19C83.135 19 95 30.864 95 45.5 95 60.135 83.135 72 68.5 72 53.864 72 42 60.135 42 45.5 42 30.864 53.864 19 68.5 19z"/>
+         </g>
+         <path fill="url(#PSgrad_0)" d="M68.5 19C83.135 19 95 30.864 95 45.5 95 60.135 83.135 72 68.5 72 53.864 72 42 60.135 42 45.5 42 30.864 53.864 19 68.5 19z"/>
+      </svg>
+      <img class="seo-bg-shape-2 up-down-animation" src=images/background-shape/seo-half-cycle.webp alt=bg-shape>
+      <img class="feature-bg-1 up-down-animation" src=images/background-shape/feature-bg-1.webp alt=bg-shape>
+      <svg class="feature-bg-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="112">
+         <defs>
+            <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0" y="0" width="112" height="112"  >
+               <feOffset in="SourceAlpha" dx="0" dy="17" />
+               <feGaussianBlur result="blurOut" stdDeviation="5.657" />
+               <feFlood flood-color="rgb(140, 84, 255)" result="floodOut" />
+               <feComposite operator="atop" in="floodOut" in2="blurOut" />
+               <feComponentTransfer>
+                  <feFuncA type="linear" slope=".27"/>
+               </feComponentTransfer>
+               <feMerge>
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic"/>
+               </feMerge>
+            </filter>
+         </defs>
+         <g filter="url(#Filter_0)">
+            <path fill-rule="evenodd" fill="rgb(156, 0, 255)" d="M79.783 62.989 31.711 50.108 66.902 14.917 79.783 62.989z"/>
+         </g>
+      </svg>
+      <section class="section section-lg">
+         <div class="container card shadow pt-5 pb-5">
+            <div class="row justify-content-center text-center mb-lg">
+               <div class="col-lg-8">
+                  <h2>Електротехника</h2>
+                  <p class="lead text-muted">Електротехника је подручје рада које ти нуди много могућности. Искористи их!
+                  </p>
+               </div>
+            </div>
+            <br/> <br/><br/>
+            <div class="row">
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <div class="px-4">
+                     <img src="images/obrazovniProfili/it.webp" class="rounded-circle img-fluid shadow mx-auto d-block" style="width: 200px;" alt="img">
+                     <div class="pt-4 text-center">
+                        <div class="title">
+                           <h5 class="d-block mb-1"> <br/><br/>Електротехничар ИТ</h5>
+                           <small class="h5 text-muted">4. године</small>
                         </div>
-                        <div class="col-6 collapse-close">
-                           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                           <span></span>
-                           <span></span>
-                           </button>
+                        <div class="mt-3">
+                           <a href="informacione-tehnologije" class="btn btn-warning btn-icon-only">
+                           <i class="ti-arrow-right"></i>
+                           </a>
                         </div>
                      </div>
                   </div>
-                  <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                     <li class="nav-item">
-                        <a href="https://tehnickaskola.edu.rs" class="nav-link">Почетна</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">О&nbsp;школи</span>
-                        </a>
-                        <div class="dropdown-menu">
-                           <a href="istorijat" class="dropdown-item">Историјат</a>
-                           <a href="assets/files/monografija/monografija.pdf" class="dropdown-item">Монографија</a>
-                           <a href="pravilnici" class="dropdown-item">Правилници</a>
-                           <a href="assets/files/organizacijaRada.pdf" class="dropdown-item">Организација&nbsp;рада</a>
-                        </div>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">Образовни&nbsp;профили</span>
-                        </a>
-                        <div class="dropdown-menu">
-                           <a href="elektrotehnika" class="dropdown-item">Електротехника</a>
-                           <a href="masinstvo" class="dropdown-item">Машинство</a>
-                           <a href="tekstilstvo" class="dropdown-item">Текстилство</a>
-                        </div>
-                     </li>
-                     <li class="nav-item">
-                        <a href="https://javnenabavke.tehnickaskola.edu.rs" class="nav-link">Јавне&nbsp;набавке</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="kontakt" class="nav-link">Контакт</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">Додатно</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-xl">
-                           <div class="dropdown-menu-inner">
-                              <a href="https://gamesHub.tehnickaskola.edu.rs" class="media d-flex align-items-center" target="_blank">
-                                 <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                                    <i class="ni ni-spaceship"></i>
-                                 </div>
-                                 <div class="media-body ml-3">
-                                    <h6 class="heading text-primary mb-md-1">Games Hub</h6>
-                                    <p class="description d-none d-md-inline-block mb-0">Ко још не воли игрице?<br/>Мало забаве не може да шкоди.</p>
-                                 </div>
-                              </a>
-                              <a href="http://webaplikacija.tehnickaskola.edu.rs" class="media d-flex align-items-center">
-                                 <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                                    <i class="ni ni-ui-04"></i>
-                                 </div>
-                                 <div class="media-body ml-3">
-                                    <h5 class="heading text-warning mb-md-1">Веб апликација</h5>
-                                    <p class="description d-none d-md-inline-block mb-0">Наша прва веб апликација сада је доступна свима</p>
-                                 </div>
-                              </a>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-                  <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://www.facebook.com/mladenovac.tehnicka.skola/" target="_blank" data-toggle="tooltip" title="Лајкуј нас на Фејсбуку">
-                        <i class="fa fa-facebook-square"></i>
-                        <span class="nav-link-inner--text d-lg-none">Facebook</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://www.instagram.com/explore/locations/1212875342078578/tehnicka-skola-mladenovac/" target="_blank" data-toggle="tooltip" title="Прати нас на Инстаграму">
-                        <i class="fa fa-instagram"></i>
-                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="https://github.com/DanijelXDA/tehnickaSkolaWebSajt" target="_blank" data-toggle="tooltip" title="Пројекат на Github-у">
-                        <i class="fa fa-github"></i>
-                        <span class="nav-link-inner--text d-lg-none">Github</span>
-                        </a>
-                     </li>
-                     
-                  </ul>
+                  <br/><br/>
                </div>
-            </div>
-         </nav>
-      </header>
-      <main class="profile-page">
-         <section class="section-profile-cover section-shaped my-0">
-            <div class="shape shape-style-1 bg-orange shape-skew alpha-4">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-         </section>
-         <section class="section section-skew">
-            <div class="container">
-               <div class="card card-profile shadow mt--300">
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                   <div class="px-4">
-                     <section class="section section-lg">
-                        <div class="container">
-                           <div class="row justify-content-center text-center mb-lg">
-                              <div class="col-lg-8">
-                                 <h2 class="display-3">Електротехника</h2>
-                                 <p class="lead text-muted">Електротехника је подручје рада које ти нуди много могућности.
-                                    <br/>Искористи их!
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                                 <div class="px-4">
-                                    <img src="assets/img/smerovi/it.png" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="img">
-                                    <div class="pt-4 text-center">
-                                       <div class="title">
-                                          <h6 class="d-block mb-1">Електротехничар информационих технологија</h6>
-                                          <small class="h6 text-muted">4. године</small>
-                                       </div>
-                                       <div class="mt-3">
-                                          <a href="informacione-tehnologije" class="btn btn-warning btn-icon-only rounded-circle">
-                                          <i class="fa fa-arrow-right"></i>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                                 <div class="px-4">
-                                    <img src="assets/img/smerovi/mm.png" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="img">
-                                    <div class="pt-4 text-center">
-                                       <div class="title">
-                                          <h6 class="d-block mb-1"><br/>Електротехничар<br/>мултимедија</h6>
-                                          <small class="h6 text-muted">4. године</small>
-                                       </div>
-                                       <div class="mt-3">
-                                          <a href="multimedija" class="btn btn-primary btn-icon-only rounded-circle">
-                                          <i class="fa fa-arrow-right"></i>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                                 <div class="px-4">
-                                    <img src="assets/img/smerovi/ee.png" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="img">
-                                    <div class="pt-4 text-center">
-                                       <div class="title">
-                                          <h6 class="d-block mb-1"><br/>Електротехничар<br/>енергетике</h6>
-                                          <small class="h6 text-muted">4. године</small>
-                                       </div>
-                                       <div class="mt-3">
-                                          <a href="energetika" class="btn btn-info btn-icon-only rounded-circle">
-                                          <i class="fa fa-arrow-right"></i>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                                 <div class="px-4">
-                                    <img src="assets/img/smerovi/ae.png" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="img">
-                                    <div class="pt-4 text-center">
-                                       <div class="title">
-                                          <h6 class="d-block mb-1"><br/><br/>Аутоелектричар</h6>
-                                          <small class="h6 text-muted">3. године</small>
-                                       </div>
-                                       <div class="mt-3">
-                                          <a href="autoelektricar" class="btn btn-success btn-icon-only rounded-circle">
-                                          <i class="fa fa-arrow-right"></i>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                     <img src="images/obrazovniProfili/mm.webp" class="rounded-circle img-fluid shadow mx-auto d-block" style="width: 200px;" alt="img">
+                     <div class="pt-4 text-center">
+                        <div class="title">
+                           <h5 class="d-block mb-1"><br/>Електротехничар<br/>мултимедија</h5>
+                           <small class="h5 text-muted">4. године</small>
                         </div>
-                     </section>
+                        <div class="mt-3">
+                           <a href="multimedija" class="btn btn-primary btn-icon-only">
+                           <i class="ti-arrow-right"></i>
+                           </a>
+                        </div>
+                        <br/><br/>
+                     </div>
                   </div>
                </div>
-            </div>
-         </section>
-      </main>
-      <footer class="footer has-cards">
-         <div class="container">
-            <div class="row row-grid align-items-center my-md">
-               <div class="col-lg-6">
-                  <h3 class="text-primary font-weight-light mb-2">Хвала ти на подршци!</h3>
-                  <h5 class="mb-0 font-weight-light">Останимо и у контакту на следећим платформама.</h5>
-               </div>
-               <div class="col-lg-6 text-lg-center btn-wrapper">
-                  <a target="_blank" href="https://www.instagram.com/explore/locations/1212875342078578/tehnicka-skola-mladenovac/" class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg" data-toggle="tooltip" data-original-title="Запрати нас">
-                  <i class="fa fa-instagram"></i>
-                  </a>
-                  <a target="_blank" href="https://www.facebook.com/mladenovac.tehnicka.skola/" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Лајкуј нас">
-                  <i class="fa fa-facebook-square"></i>
-                  </a>
-                  <a target="_blank" href="mailto:tsmladenovac@gmail.com" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" data-toggle="tooltip" data-original-title="Пошаљи нам мејл">
-                  <i class="fa fa-envelope-o"></i>
-                  </a>
-                  <a target="_blank" href="https://github.com/DanijelXDA/" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" data-toggle="tooltip" data-original-title="Посети Github профил">
-                  <i class="fa fa-github"></i>
-                  </a>
-               </div>
-            </div>
-            <hr>
-            <div class="row align-items-center justify-content-md-between">
-               <div class="col-md-6">
-                  <div class="copyright">
-                     &copy; 2018
-                     <a href="https://github.com/DanijelXDA/" target="_blank">Техничка школа Младеновац</a>
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <div class="px-4">
+                     <img src="images/obrazovniProfili/ee.webp" class="rounded-circle img-fluid shadow mx-auto d-block" style="width: 200px;" alt="img">
+                     <div class="pt-4 text-center">
+                        <div class="title">
+                           <h5 class="d-block mb-1"><br/>Електротехничар<br/>енергетике</h5>
+                           <small class="h5 text-muted">4. године</small>
+                        </div>
+                        <div class="mt-3">
+                           <a href="energetika" class="btn btn-info btn-icon-only">
+                           <i class="ti-arrow-right"></i>
+                           </a>
+                        </div>
+                        <br/><br/>
+                     </div>
                   </div>
                </div>
-               <div class="col-md-6">
-                  <ul class="nav nav-footer justify-content-end">
-                     <li class="nav-item">
-                        <a href="https://webcharge.tehnickaskola.edu.rs/" class="nav-link" target="_blank">Charge Web</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="https://policies.google.com/terms?hl=sr&gl=ZZ" class="nav-link" target="_blank">Услови&nbsp;коришћења</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="https://policies.google.com/privacy?hl=sr&gl=ZZ" class="nav-link" target="_blank">Политика&nbsp;приватности</a>
-                     </li>
-                  </ul>
+               <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                  <div class="px-4">
+                     <img src="images/obrazovniProfili/ae.webp" class="rounded-circle img-fluid shadow mx-auto d-block" style="width: 200px;" alt="img">
+                     <div class="pt-4 text-center">
+                        <div class="title">
+                           <h5 class="d-block mb-1"><br/><br/>Аутоелектричар</h5>
+                           <small class="h5 text-muted">3. године</small>
+                        </div>
+                        <div class="mt-3">
+                           <a href="autoelektricar" class="btn btn-success btn-icon-only">
+                           <i class="ti-arrow-right"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
+      </section>
+      <section class=newsletter>
+         <div class=container>
+            <div class=row>
+               <div class="col-lg-12 text-center">
+                  <h2>Претплата на новости</h2>
+                  <p class=mb-5>Останите у току са дешавањима у нашој школи.</p>
+               </div>
+               <div class="col-lg-8 col-sm-10 col-12 mx-auto">
+                  <form action="novosti.php" method="POST">
+                     <div class="input-wrapper position-relative">
+                        <input type=email class=newsletter-form id=nov name=nov placeholder="Унесите вашу е-адресу">
+                        <button type=submit value=send class="btn newsletter-btn">Претплата</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <svg class="newsletter-bg-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138">
+            <defs>
+               <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0" y="0" width="138" height="138"  >
+                  <feOffset in="SourceAlpha" dx="0" dy="23" />
+                  <feGaussianBlur result="blurOut" stdDeviation="6.557" />
+                  <feFlood flood-color="rgb(120, 200, 215)" result="floodOut" />
+                  <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                  <feComponentTransfer>
+                     <feFuncA type="linear" slope=".3"/>
+                  </feComponentTransfer>
+                  <feMerge>
+                     <feMergeNode/>
+                     <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+               </filter>
+               <linearGradient id="PSgrad_0" x1="98.163%" x2="0" y1="0" y2="19.081%">
+                  <stop offset="0" stop-color="rgb(23,255,211)" stop-opacity="1" />
+                  <stop offset="100%" stop-color="rgb(6,255,12)" stop-opacity="1" />
+               </linearGradient>
+            </defs>
+            <g filter="url(#Filter_0)">
+               <path fill-rule="evenodd" fill="rgb(246, 255, 163)" d="M68.5 19C83.135 19 95 30.864 95 45.5 95 60.135 83.135 72 68.5 72 53.864 72 42 60.135 42 45.5 42 30.864 53.864 19 68.5 19z"/>
+            </g>
+            <path fill="url(#PSgrad_0)" d="M68.5 19C83.135 19 95 30.864 95 45.5 95 60.135 83.135 72 68.5 72 53.864 72 42 60.135 42 45.5 42 30.864 53.864 19 68.5 19z"/>
+         </svg>
+      </section>
+          <footer class="footer-section footer" style="background-image: url('images/backgrounds/footer-bg.webp'); padding-top: 80px; margin-top: 50px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0"><a href="https://tehnickaskola.edu.rs/">
+                  <img src="images/logo.webp" alt="img" style="height: 80px; filter: invert(1);">
+                  </a>
+               </div>
+               <nav class="col-lg-8 align-self-center mb-5">
+                  <ul class="list-inline text-lg-right text-center footer-menu">
+                     <li class="list-inline-item active"><a href="https://tehnickaskola.edu.rs/" style="color: #fff !important;">Почетна</a></li>
+                     <li class="list-inline-item"><a class="page-scroll" href="https://tehnickaskola.edu.rs/oSkoli" style="color: #fff !important;">О&nbsp;школи</a></li>
+                     <li class="list-inline-item"><a class="page-scroll" href="obrazovniProfili" style="color: #fff !important;">Образовни&nbsp;профили</a></li>
+                     <li class="list-inline-item"><a class="page-scroll" href="https://ucenickakompanijass.tehnickaskola.edu.rs" style="color: #fff !important;">Ученичка&nbsp;компанија</a></li>
+                     <li class="list-inline-item"><a class="page-scroll" href="kontakt" style="color: #fff !important;">Контакт</a></li>
+                  </ul>
+               </nav>
+               <nav class="col-12">
+                  <ul class="list-inline text-lg-right text-center social-icon">
+                     <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/mladenovac.tehnicka.skola/"><i class="ti-facebook"></i></a></li>
+                     <li class="list-inline-item"><a class="twitter" href="https://www.google.com/maps?q=tehnicka+skola+mladenovac&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwj1ytTn5YThAhUqy4UKHdXACNcQ_AUIDygC"><i class="ti-map"></i></a></li>
+                     <li class="list-inline-item"><a class="linkedin" href="mailto:tsmladenovac@gmail.com"><i class="ti-comments"></i></a></li>
+                     <li class="list-inline-item"><a class="black" href="https://github.com/DanijelXDA/tehnickaSkolaWebSajt"><i class="ti-github"></i></a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
       </footer>
-      <!-- Core -->
-      <script src="assets/vendor/jquery/jquery.min.js"></script>
-      <script src="assets/vendor/popper/popper.min.js"></script>
-      <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
-      <!-- Argon JS -->
-      <script src="assets/js/argon.js"></script>
+      <script type=text/javascript>var css1=document.createElement('link');css1.rel='stylesheet';css1.href='plugins/bootstrap/bootstrap.min.css';css1.type='text/css';var fastCSS1=document.getElementsByTagName('link')[0];fastCSS1.parentNode.insertBefore(css1,fastCSS1);var css2=document.createElement('link');css2.rel='stylesheet';css2.href='plugins/slick/slick.css';css2.type='text/css';var fastCSS2=document.getElementsByTagName('link')[0];fastCSS2.parentNode.insertBefore(css2,fastCSS2);var css3=document.createElement('link');css3.rel='stylesheet';css3.href='plugins/themify-icons/themify-icons.css';css3.type='text/css';var fastCSS3=document.getElementsByTagName('link')[0];fastCSS3.parentNode.insertBefore(css3,fastCSS3);var css4=document.createElement('link');css4.rel='stylesheet';css4.href='plugins/Venobox/venobox.css';css4.type='text/css';var fastCSS4=document.getElementsByTagName('link')[0];fastCSS4.parentNode.insertBefore(css4,fastCSS4);var css5=document.createElement('link');css5.rel='stylesheet';css5.href='plugins/aos/aos.css';css5.type='text/css';var fastCSS5=document.getElementsByTagName('link')[0];fastCSS5.parentNode.insertBefore(css5,fastCSS5);</script><script src=plugins/jQuery/jquery.min.js></script><script src=plugins/bootstrap/bootstrap.min.js></script><script src=plugins/slick/slick.min.js></script><script src=plugins/aos/aos.js></script><script src=plugins/Venobox/venobox.min.js></script><script src=js/script.min.js></script>
    </body>
 </html>
