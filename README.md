@@ -2,14 +2,11 @@
 
 <br/>
 <center>
-<img src="https://tehnickaskola.edu.rs/ss1.PNG">
+<img src="https://tehnickaskola.edu.rs/s.png">
 </center><br/>
 What's new in this release: <br />
-    -> Version Summer 2020<br />
-        &emsp;- UI has been redesigned<br />
-        &emsp;- Scripts were updated<br />
-        &emsp;- Icons have got some colors<br />
-        &emsp;- Every Page has got a lightweight design<br />
+    -> Version Winter 2020<br />
+        &emsp;- PHP removed to prevent spam<br />
         &emsp; - Code Optimisation<br />
 
 
